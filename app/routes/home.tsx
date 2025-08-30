@@ -40,8 +40,12 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section className="about-section min-h-screen flex items-center py-20 snap-start bg-white">
-        <div className="container mx-auto px-4">
+      <section className="about-section min-h-screen flex items-center py-20 snap-start relative bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: "url('/home_about.jpg')"
+        }}
+      >
+        <div className="container mx-auto px-4 relative z-10">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
