@@ -40,41 +40,47 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section className="about-section min-h-screen flex items-center py-20 snap-start relative bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: "url('/home_about.jpg')"
-        }}
-      >
+      <section className="about-section min-h-screen flex items-center py-20 snap-start relative overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: "url('/home_about.jpg')",
+            filter: "blur(4px)",
+            transform: "scale(1.1)"
+          }}
+        />
         <div className="container mx-auto px-4 relative z-10">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
-                <span className="emphasis">IChTo 2026</span>
-              </h2>
-              <p className="text-lg text-gray-700 leading-relaxed">
-                is a team competition for high school students, 
-                with a format based on scientific debates starting from problems with open solutions. Having a 
-                novel approach in education, as compared to classical Olympiads, the accent is on both scientific 
-                and soft skills. As a result, creativity, teamwork, critical thinking, and public speaking are 
-                very important to succeed in this contest.
-              </p>
-              <a 
-                href="/about" 
-                className="inline-flex items-center text-blue-900 hover:text-blue-100 underline mt-4 text-lg"
-              >
-                View details
-                <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M9 5l7 7-7 7" />
-                </svg>
-              </a>
-            </div>
-            <div className="text-center">
-              <img 
-                src="/logo_2025.png" 
-                alt="IChTo 2026 Logo" 
-                className="max-w-full h-auto mx-auto"
-                style={{ maxHeight: "300px" }}
-              />
+          <div className="bg-white bg-opacity-90 py-24 px-12 rounded-xl shadow-lg">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div>
+                <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
+                  About <span className="emphasis">IChTo 2026</span>
+                </h2>
+                <p className="text-lg text-gray-700 leading-relaxed">
+                  is a team competition for high school students, 
+                  with a format based on scientific debates starting from problems with open solutions. Having a 
+                  novel approach in education, as compared to classical Olympiads, the accent is on both scientific 
+                  and soft skills. As a result, creativity, teamwork, critical thinking, and public speaking are 
+                  very important to succeed in this contest.
+                </p>
+                <a 
+                  href="/about" 
+                  className="inline-flex items-center text-blue-900 hover:text-blue-100 underline mt-4 text-lg"
+                >
+                  View details
+                  <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M9 5l7 7-7 7" />
+                  </svg>
+                </a>
+              </div>
+              <div className="text-center">
+                <img 
+                  src="/logo_2025.png" 
+                  alt="IChTo 2026 Logo" 
+                  className="max-w-full h-auto mx-auto"
+                  style={{ maxHeight: "300px" }}
+                />
+              </div>
             </div>
           </div>
         </div>
