@@ -15,7 +15,7 @@ export default function Home() {
       <Header />
       <div className="landing-container">
       {/* Hero Section */}
-      <section className="hero-section min-h-screen flex items-center justify-center relative bg-cover bg-center bg-no-repeat snap-start overflow-hidden"
+      <section className="hero-section min-h-screen flex items-center justify-start relative bg-cover bg-center bg-no-repeat snap-start overflow-hidden"
         style={{
           backgroundImage: "url('/landing.jpg')",
           filter: "blur(0px)",
@@ -29,14 +29,12 @@ export default function Home() {
             transform: "scale(1.1)"
           }}
         />
-        <div className="relative z-10 text-center text-white px-4">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4">
-            International Chemistry Tournament 2026
+        <div className="relative z-10 text-left text-white px-4 ml-8 md:ml-16">
+          <h1 className="text-5xl md:text-7xl font-bold mb-4">
+            International<br />Chemistry<br />Tournament 2026
           </h1>
-          <p className="text-lg md:text-xl">
-            15-19 August 2026
-            <br />
-            in Hoengseong, KR
+          <p className="text-xl md:text-2xl">
+            15-19 August 2026<br />in Hoengseong, KR
           </p>
         </div>
       </section>
@@ -56,6 +54,15 @@ export default function Home() {
                 and soft skills. As a result, creativity, teamwork, critical thinking, and public speaking are 
                 very important to succeed in this contest.
               </p>
+              <a 
+                href="/about" 
+                className="inline-flex items-center text-blue-900 hover:text-blue-100 underline mt-4 text-lg"
+              >
+                View details
+                <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M9 5l7 7-7 7" />
+                </svg>
+              </a>
             </div>
             <div className="text-center">
               <img 
