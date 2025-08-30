@@ -87,7 +87,7 @@ export default function Home() {
       </section>
 
       {/* Sponsors Section */}
-      <section className="sponsors-section min-h-screen flex items-center py-20 snap-start bg-gray-50">
+      <section className="sponsors-section min-h-screen flex items-center py-20 snap-start bg-gray-200">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-12 text-gray-900">
             Our Sponsors

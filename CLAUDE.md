@@ -34,7 +34,7 @@
     3. 하단 섹션. 'Our Sponsors' 라는 제목 아래에 스폰서들의 로고 사진이 나열되어 있다.
       - 스폰서들의 목록과 그 사진들은 아직 확인되지 않았으므로 임시로 비워 둔다.
 - /about
-  - 화면 중앙에 About IChTo 2026 표시, 배경은 블러 처리된 `about.jpg`이고 스크롤 하면 `bg-gray-50`회색 바탕의 내용으로 넘어감 (`about.jpg`의 하단을 흐릿하게 하여 회색 바탕으로 자연스럽게 이어지게 함.) 회색 바탕의 내용에는 다음 요소들이 순차적으로 나열됨. 각 요소들은 둥근 모서리를 가진 흰색 사각형들 위에 적혀 있음.
+  - 화면 중앙에 About IChTo 2026 표시, 배경은 블러 처리된 `about.jpg`이고 스크롤 하면 `bg-gray-200`회색 바탕의 내용으로 넘어감 (`about.jpg`의 하단을 흐릿하게 하여 회색 바탕으로 자연스럽게 이어지게 함.) 회색 바탕의 내용에는 다음 요소들이 순차적으로 나열됨. 각 요소들은 둥근 모서리를 가진 흰색 사각형들 위에 적혀 있음.
     - 텍스트 - 'The International Chemistry Tournament (IChTo) is a team competition for high school students, with a format based on scientific debates starting from problems with open solutions. Having a novel approach in education, as compared to classical Olympiads, the accent is on both scientific and soft skills. As a result, creativity, teamwork, critical thinking, and public speaking are very important to succeed in this contest.'
     - https://youtu.be/QK9CkL4Fkg0 유튜브 영상. 영상 하단에는 'IChTo 2023 Final Stage' 라는 설명 있음
     - 두 개의 영상 - 각각 좌, 우에 위치. 각 영상의 하단에는 영상에 대한 설명 텍스트가 있음.
