@@ -20,7 +20,7 @@ export function Header() {
           </div>
 
           {/* Right side - Desktop Navigation */}
-          <div className="hidden md:flex bg-white rounded-4xl pl-7 pr-4 py-3">
+          <div className="hidden md:flex bg-white rounded-4xl pl-6 pr-4 py-3">
             <nav className="flex items-center space-x-8">
               <Link to="/about" className="text-gray-700 hover:text-blue-900 transition-colors text-lg">
                 About
