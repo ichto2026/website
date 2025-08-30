@@ -26,7 +26,9 @@ export default function Home() {
           style={{
             backgroundImage: "url('/landing.jpg')",
             filter: "blur(4px)",
-            transform: "scale(1.1)"
+            transform: "scale(1.1)",
+            maskImage: "linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 70%, rgba(0,0,0,1) 100%)",
+            WebkitMaskImage: "linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 40%, rgba(0,0,0,1) 100%)" // 블러 처리 퍼센트 (현재 30%) 는 나중에 의견 수렴 후 조정
           }}
         />
         <div className="relative z-10 text-left text-white px-4 ml-8 md:ml-16">
