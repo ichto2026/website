@@ -44,7 +44,7 @@ export default function Home() {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: "url('/home_about.jpg')",
+            backgroundImage: "url('/about.jpg')",
             filter: "blur(4px)",
             transform: "scale(1.1)"
           }}
@@ -53,10 +53,10 @@ export default function Home() {
           <div className="bg-white bg-opacity-90 py-24 px-12 rounded-xl shadow-lg">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
-                  About <span className="emphasis">IChTo 2026</span>
+                <h2 className="text-3xl md:text-4xl font-bold mb-14 text-gray-900">
+                  <span className="emphasis">IChTo 2026</span>
                 </h2>
-                <p className="text-lg text-gray-700 leading-relaxed">
+                <p className="text-lg text-gray-700 leading-relaxed mb-10">
                   is a team competition for high school students, 
                   with a format based on scientific debates starting from problems with open solutions. Having a 
                   novel approach in education, as compared to classical Olympiads, the accent is on both scientific 
@@ -65,7 +65,7 @@ export default function Home() {
                 </p>
                 <a 
                   href="/about" 
-                  className="inline-flex items-center text-blue-900 hover:text-blue-100 underline mt-4 text-lg"
+                  className="inline-flex items-center text-blue-900 hover:text-blue-100 underline text-lg"
                 >
                   View details
                   <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

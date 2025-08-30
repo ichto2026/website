@@ -24,7 +24,7 @@
   - 3 섹션으로 나눠져 있음 (Scroll Snap 적용)
     1. 상단 섹션. 배경으로 `landing.jpg` 사용하나 살짝 블러 처리되어 있음. 좌측 정렬된 굵은 글씨 표제 'International\nChemistry\nTournament 2026' 있음. 바로 아래에 작은 글씨로 '15-19 August 2026\nin Hoengseong, KR' 이라고 적혀 있음
     2. 중앙 섹션. 좌측에는 제목, 대회를 간략하게 설명하는 텍스트, 우측에는 대회의 로고가 들어 있다.
-      - 제목: About IChTo 2026
+      - 제목: IChTo 2026
       - 텍스트 내용: is a team competition for high school students, with a format based on scientific debates starting from problems with open solutions. Having a novel approach in education, as compared to classical Olympiads, the accent is on both scientific and soft skills. As a result, creativity, teamwork, critical thinking, and public speaking are very important to succeed in this contest.
       - 로고 파일: `logo_2025.png` (임시. 2026 버전 로고가 추가되면 변경될 예정)
       - 텍스트 바로 아래에 /about으로 이동하는 'View details' (밑줄, 오른쪽 화살표) 링크가 있다.
