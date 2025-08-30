@@ -6,7 +6,7 @@ export function Footer() {
           {/* 좌측: Where to find us와 소셜미디어 링크들 */}
           <div className="mb-4 md:mb-0">
             <h3 className="text-white font-semibold mb-3">Where to find us</h3>
-            <div className="flex space-x-4 items-center">
+            <div className="flex space-x-4 items-center justify-around">
               <a
                 href="https://www.facebook.com/share/18xJ5sHSpj/?mibextid=wwXIfr"
                 target="_blank"
