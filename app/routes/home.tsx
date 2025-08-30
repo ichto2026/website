@@ -75,7 +75,7 @@ export default function Home() {
               </div>
               <div className="text-center">
                 <img 
-                  src="/logo_2025.png" 
+                  src="/ICT-color-1.png" 
                   alt="IChTo 2026 Logo" 
                   className="max-w-full h-auto mx-auto"
                   style={{ maxHeight: "300px" }}
