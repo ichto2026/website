@@ -47,7 +47,7 @@ export default function Home() {
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
             backgroundImage: "url('/about.jpg')",
-            filter: "blur(4px)",
+            filter: "blur(0px)",
             transform: "scale(1.1)"
           }}
         />
