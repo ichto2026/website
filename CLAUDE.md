@@ -5,7 +5,7 @@
 # 사용하는 기술 스택
 
 - React Router (v7 Framework mode)
-- GitHub Pages (for deployment)
+- Vercel (for deployment)
 
 # 페이지 구성
 
@@ -65,6 +65,18 @@
       - A: Here is a scheme that should help you to understand how the Round goes.
         `scheme-1024x909.png`
 - /program
-  - 업데이트 예정
+  - 화면 중앙에 'Programs' 라고 적혀 있음. 배경은 블러 처리된 `mountain.jpg`이고 스크롤 하면 `bg-gray-200`회색 바탕의 내용으로 넘어감 (`mountain.jpg`의 하단을 흐릿하게 하여 회색 바탕으로 자연스럽게 이어지게 함.) 회색 바탕의 내용 위에
+    1. 'Schedule' 이라는 소제목 아래 일정표 작성. 날짜-일정 여러 쌍이 각각 둥근 모서리의 흰색 사각형들에 작성되어 있음. 사각형들은 `bg-gray-400`의 선으로 위에서 아래로 이어져 있음.
+      - 8/15: Opening Ceremony, Quiz, School Tour, Team Introduction and Round 1
+      - 8/16: Round 2 and Water Park Breaks
+      - 8/17: Round 3 and 4
+      - 8/18: Final Round, Closing Ceremony and Cultural Exchange
+      - 8/19: A Tour of Seoul
+    2. 'Accomodation' 이라는 소제목 아래 숙박시설 소개. 이름과 내용을 적절한 크기와 형태로 하나의 큰 둥근 모서리의 흰 사각형 안에 정리
+      - 이름: 웰리힐리파크 Welli Hilli Park
+      - 내용: 로고 (`accomodation_logo.svg`), 외부사진 (`accomodation_outdoor.jpg`), 내부사진 (`accomodation_indoor.jpg`), 지도 (구글 맵 연동)
+    3. 'About the Venue' 라는 내용 아래에 시설 소개. 이름과 내용을 적절한 크기와 형태로 하나의 큰 둥근 모서리의 흰 사각형 안에 정리
+      - 이름: 민족사관고등학교\nKorean Minjok Leadership Academy
+      - 내용: 로고 (`kmla_logo.png`), 사진 (`kmla_photo.jpg`), 지도 (구글 맵 연동)
 - /register
   - 업데이트 예정
