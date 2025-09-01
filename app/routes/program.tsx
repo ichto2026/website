@@ -22,10 +22,10 @@ export default function Program() {
         <div className="relative z-10 text-center text-white">
           <h1 className="text-5xl md:text-7xl font-bold">Programs</h1>
         </div>
-        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-gray-200 to-transparent"></div>
+        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-b from-transparent to-gray-50"></div>
       </div>
 
-      <div className="bg-gray-200 py-16">
+      <div className="bg-gray-50 py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="mb-16">
@@ -36,7 +36,7 @@ export default function Program() {
                 <div className="space-y-8">
                   <div className="relative flex items-center">
                     <div className="flex-1 pr-8">
-                      <div className="bg-white rounded-lg p-6">
+                      <div className="bg-white rounded-lg p-6 border-2 border-gray-200">
                         <div className="font-bold text-lg text-gray-900 mb-2">8/15</div>
                         <p className="text-gray-700">Opening Ceremony, Quiz, School Tour, Team Introduction and Round 1</p>
                       </div>
@@ -49,7 +49,7 @@ export default function Program() {
                     <div className="flex-1 pr-8"></div>
                     <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-gray-400 rounded-full"></div>
                     <div className="flex-1 pl-8">
-                      <div className="bg-white rounded-lg p-6">
+                      <div className="bg-white rounded-lg p-6 border-2 border-gray-200">
                         <div className="font-bold text-lg text-gray-900 mb-2">8/16</div>
                         <p className="text-gray-700">Round 2 and Water Park Breaks</p>
                       </div>
@@ -58,7 +58,7 @@ export default function Program() {
 
                   <div className="relative flex items-center">
                     <div className="flex-1 pr-8">
-                      <div className="bg-white rounded-lg p-6">
+                      <div className="bg-white rounded-lg p-6 border-2 border-gray-200">
                         <div className="font-bold text-lg text-gray-900 mb-2">8/17</div>
                         <p className="text-gray-700">Round 3 and 4</p>
                       </div>
@@ -71,7 +71,7 @@ export default function Program() {
                     <div className="flex-1 pr-8"></div>
                     <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-gray-400 rounded-full"></div>
                     <div className="flex-1 pl-8">
-                      <div className="bg-white rounded-lg p-6">
+                      <div className="bg-white rounded-lg p-6 border-2 border-gray-200">
                         <div className="font-bold text-lg text-gray-900 mb-2">8/18</div>
                         <p className="text-gray-700">Final Round, Closing Ceremony and Cultural Exchange</p>
                       </div>
@@ -80,7 +80,7 @@ export default function Program() {
 
                   <div className="relative flex items-center">
                     <div className="flex-1 pr-8">
-                      <div className="bg-white rounded-lg p-6">
+                      <div className="bg-white rounded-lg p-6 border-2 border-gray-200">
                         <div className="font-bold text-lg text-gray-900 mb-2">8/19</div>
                         <p className="text-gray-700">A Tour of Seoul</p>
                       </div>
@@ -94,7 +94,7 @@ export default function Program() {
 
             <div className="mb-16">
               <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">Accommodation</h2>
-              <div className="bg-white rounded-lg p-8">
+              <div className="p-8">
                 <div className="flex flex-col md:flex-row items-center md:justify-around mb-8 space-y-4 md:space-y-0">
                   <img 
                     src="/accomodation_logo.svg" 
@@ -137,7 +137,7 @@ export default function Program() {
 
             <div>
               <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">About the Venue</h2>
-              <div className="bg-white rounded-lg p-8">
+              <div className="p-8">
                 <div className="flex flex-col md:flex-row items-center md:justify-around mb-8 space-y-4 md:space-y-0">
                   <img 
                     src="/kmla_logo.png" 

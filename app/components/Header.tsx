@@ -18,7 +18,7 @@ export function Header() {
       <div className="container mx-auto px-4 pt-3">
         <div className="flex items-center justify-between h-20">
           {/* Left side - Logo */}
-          <div className="bg-white rounded-3xl px-3 py-3">
+          <div className="bg-gray-50 rounded-3xl px-3 py-3">
             <Link to="/">
               <img 
                 src="/ichtoLogo180ai.png"
@@ -29,7 +29,7 @@ export function Header() {
           </div>
 
           {/* Right side - Desktop Navigation */}
-          <div className="hidden md:flex bg-white rounded-3xl pl-6 pr-4 py-3">
+          <div className="hidden md:flex bg-gray-50 rounded-3xl pl-6 pr-4 py-3">
             <nav className="flex items-center space-x-8">
               <Link to="/about" className="text-gray-700 hover:text-blue-900 transition-colors text-lg">
                 About
@@ -50,7 +50,7 @@ export function Header() {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden bg-white rounded-3xl px-3 py-3">
+          <div className="md:hidden bg-gray-50 rounded-3xl px-3 py-3">
             <button
               className="flex items-center justify-center w-11 h-11"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -67,7 +67,7 @@ export function Header() {
 
         {/* Mobile Menu */}
         <div className={`md:hidden ${isMobileMenuOpen ? 'block' : 'hidden'}`}>
-          <div className="mt-2 bg-white rounded-3xl px-6 py-4 space-y-4">
+          <div className="mt-2 bg-gray-50 rounded-3xl px-6 py-4 space-y-4">
             <Link 
               to="/about" 
               className="block text-gray-700 hover:text-blue-900 transition-colors"

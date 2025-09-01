@@ -25,29 +25,23 @@ export default function About() {
           </h1>
         </div>
         {/* Gradient overlay to transition to gray background */}
-        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-b from-transparent to-gray-200"></div>
+        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-b from-transparent to-gray-50"></div>
       </div>
 
       {/* Content Section */}
-      <div className="bg-gray-200 py-16 relative">
-        {/* Vertical connecting line */}
-        <div className="absolute left-1/2 transform -translate-x-1/2 top-16 bottom-16 w-0.5 bg-gray-400 opacity-60"></div>
+      <div className="bg-gray-50 py-16 relative">
         
         <div className="container mx-auto px-4 space-y-12 relative">
           
           {/* Main Description */}
-          <div className="max-w-4xl mx-auto bg-white rounded-lg p-8 relative z-10">
-            {/* Connection dot */}
-            <div className="absolute -left-2 top-1/2 transform -translate-y-1/2 w-4 h-4 bg-gray-400 rounded-full"></div>
+          <div className="max-w-4xl mx-auto p-8 relative z-10">
             <p className="text-base md:text-lg text-gray-800 leading-relaxed">
               The International Chemistry Tournament (IChTo) is a team competition for high school students, with a format based on scientific debates starting from problems with open solutions. Having a novel approach in education, as compared to classical Olympiads, the accent is on both scientific and soft skills. As a result, creativity, teamwork, critical thinking, and public speaking are very important to succeed in this contest.
             </p>
           </div>
 
           {/* Main Video */}
-          <div className="max-w-4xl mx-auto bg-white rounded-lg p-8 relative z-10">
-            {/* Connection dot */}
-            <div className="absolute -left-2 top-1/2 transform -translate-y-1/2 w-4 h-4 bg-gray-400 rounded-full"></div>
+          <div className="max-w-4xl mx-auto p-8 relative z-10">
             <div className="aspect-video">
               <iframe
                 className="w-full h-full rounded-lg"
@@ -62,9 +56,7 @@ export default function About() {
           </div>
 
           {/* Two Videos Side by Side */}
-          <div className="max-w-6xl mx-auto bg-white rounded-lg px-12 py-12 relative z-10">
-            {/* Connection dot */}
-            <div className="absolute -left-2 top-1/2 transform -translate-y-1/2 w-4 h-4 bg-gray-400 rounded-full"></div>
+          <div className="max-w-6xl mx-auto px-12 py-12 relative z-10">
             
             <div className="grid md:grid-cols-2 gap-24">
               <div>
@@ -98,14 +90,12 @@ export default function About() {
           </div>
 
           {/* FAQ Section */}
-          <div className="max-w-4xl mx-auto bg-white rounded-lg p-8 relative z-10">
-            {/* Connection dot */}
-            <div className="absolute -left-2 top-1/2 transform -translate-y-1/2 w-4 h-4 bg-gray-400 rounded-full"></div>
+          <div className="max-w-4xl mx-auto p-8 relative z-10">
             <h2 className="text-xl md:text-2xl font-bold mb-6 text-gray-900">Frequently Asked Questions</h2>
             
             <div className="space-y-6">
               <details className="group">
-                <summary className="flex justify-between items-center cursor-pointer list-none p-4 bg-gray-100 rounded-lg hover:bg-gray-100 transition-colors">
+                <summary className="flex justify-between items-center cursor-pointer list-none p-4 bg-gray-200 rounded-lg hover:bg-gray-300 transition-colors">
                   <span className="text-sm md:text-base font-semibold text-gray-900">What is the Chemistry Tournament?</span>
                   <span className="transform group-open:rotate-180 transition-transform">▼</span>
                 </summary>
@@ -115,7 +105,7 @@ export default function About() {
               </details>
 
               <details className="group">
-                <summary className="flex justify-between items-center cursor-pointer list-none p-4 bg-gray-100 rounded-lg hover:bg-gray-100 transition-colors">
+                <summary className="flex justify-between items-center cursor-pointer list-none p-4 bg-gray-200 rounded-lg hover:bg-gray-300 transition-colors">
                   <span className="text-sm md:text-base font-semibold text-gray-900">How is it different from the Olympiad?</span>
                   <span className="transform group-open:rotate-180 transition-transform">▼</span>
                 </summary>
