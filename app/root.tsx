@@ -24,14 +24,7 @@ export const links: Route.LinksFunction = () => [
   {
     rel: "icon",
     type: "image/png",
-    sizes: "32x32",
-    href: "/cropped-Olimpiada-de-chimie-logo-orizontal-1-1-32x32.png",
-  },
-  {
-    rel: "icon",
-    type: "image/png",
-    sizes: "192x192",
-    href: "/cropped-Olimpiada-de-chimie-logo-orizontal-1-1-192x192.png",
+    href: "/ichtologo.png",
   },
 ];
 

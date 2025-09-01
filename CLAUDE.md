@@ -10,7 +10,7 @@
 # 페이지 구성
 
 - Header: 데스크탑 페이지에서는 각각의 요소들이 가로로 리스팅됨. 모바일 페이지에서는 로고 버튼과 샌드위치 버튼으로 존재. 좌측 요소와 우측 요소는 각각 `border-radius:40px` 이 적용된 흰색 배경 안에 있어 마치 버튼들이 오버레이 된 것과 같은 모습을 보여줌.
- - 좌측: 로고 (`cropped-Olimpiada-de-chimie-logo-orizontal-1-1-192x192.png`). 클릭 시 / 로 리다이렉트
+ - 좌측: 로고 (`ichtoLogo180ai.png`). 클릭 시 / 로 리다이렉트
  - 우측 or 샌드위치 버튼: About, Participation, Program 과 'Register Now' 라고 적혀 있는 강조된 버튼. 각각 클릭 시 /about, /participation, /program, /register 로 리다이렉트됨
 - Main
 - Footer: 좌측에 'Where to find us' 라는 텍스트 아래에 있는 소셜미디어 링크 로고들, 우측에 대회 로고 (`ICT-color-1.png`) 배치
@@ -48,22 +48,34 @@
           Secondly, the Tournament is a team event (teams of 4 to 6 people take part in it). So not only personal skills are important, but a capacity for teamwork and communication skills. Also it’s very important to build a right strategy but that’s the topic for another discussion.
 - /participation
   - 업데이트 예정
-  - 예상: Rules
-  - 예상: 다음 소제목과 텍스트
-    - 소제목 - 'Who can participate in IChTo?'
-    - 텍스트 - 'A team consists of 4-6 high school students representing the same country. They do not have to be enrolled in the same high school. Each country can register up to 2 teams, besides the host country, which can register up to 3 teams'
-  - 예상: Frequently asked questions
-    - Q: What role can a participant perform?
-      - A: There are four main roles one can perform:
-        **A Reporter**: introduces and defends the task solution
-        **An Opponent**: gives a brief description of the solution, points out the shortcomings of the report, discusses it with the reporter and makes a conclusion about how good the task was solved.
-        **A Reviewer**: evaluates the performance of the reporter and the opponent, points out main shortcomings of the report and the opposition.
-        **An Observer**: can ask questions to anyone. This role exists only in four or five team sections.
-    - Q: What do the teams do before the Tournament?
-      - A: Each team solves the tasks and makes a presentation for every task (except the tasks from which team is going to refuse) to introduce and defend solutions.
-    - What happens in the Tournament?
-      - A: Here is a scheme that should help you to understand how the Round goes.
-        `scheme-1024x909.png`
+  - 화면 중앙에 Participation 표시, 배경은 `minsa.jpg`이고 스크롤 하면 `bg-gray-200`회색 바탕의 내용으로 넘어감 (`about.jpg`의 하단을 흐릿하게 하여 회색 바탕으로 자연스럽게 이어지게 함.) 회색 바탕의 내용에는 다음 요소들이 순차적으로 나열됨. 각 요소들은 둥근 모서리를 가진 흰색 사각형들 위에 적혀 있음.
+    - 소제목: Who can participate in IChTo?
+      - 텍스트: A team consists of 4-6 high school students representing the same country. They do not have to be enrolled in the same high school. Each country can register up to 2 teams, besides the host country, which can register up to 3 teams
+      - 버튼: Register Now (누르면 /register로 리다이렉트. 색상 기본 `bg-blue-800` hover `bg-blue-900`)
+    - 소제목: Problems (다운로드 링크 버튼들. 파일은 추후 제공)
+      - IChTo 2026
+      - Past Tournaments
+        - IChTo 2024
+        - IChTo 2023
+        - IChTo 2022
+        - IChTo 2020/2021
+        - IChTo 2019
+        - IChTo 2018
+        - IChTo 2017
+    - 소제목: Rules
+      - Rules Book (다운로드 링크 버튼. 파일은 추후 제공)
+    - 예상: Frequently asked questions (각 질의는 Accordion 형태로)
+      - Q: What role can a participant perform?
+        - A: There are four main roles one can perform:
+          **A Reporter**: introduces and defends the task solution
+          **An Opponent**: gives a brief description of the solution, points out the shortcomings of the report, discusses it with the reporter and makes a conclusion about how good the task was solved.
+          **A Reviewer**: evaluates the performance of the reporter and the opponent, points out main shortcomings of the report and the opposition.
+          **An Observer**: can ask questions to anyone. This role exists only in four or five team sections.
+      - Q: What do the teams do before the Tournament?
+        - A: Each team solves the tasks and makes a presentation for every task (except the tasks from which team is going to refuse) to introduce and defend solutions.
+      - What happens in the Tournament?
+        - A: Here is a scheme that should help you to understand how the Round goes.
+          `scheme-1024x909.png`
 - /program
   - 화면 중앙에 'Programs' 라고 적혀 있음. 배경은 블러 처리된 `mountain.jpg`이고 스크롤 하면 `bg-gray-200`회색 바탕의 내용으로 넘어감 (`mountain.jpg`의 하단을 흐릿하게 하여 회색 바탕으로 자연스럽게 이어지게 함.) 회색 바탕의 내용 위에
     1. 'Schedule' 이라는 소제목 아래 일정표 작성. 날짜-일정 여러 쌍이 각각 둥근 모서리의 흰색 사각형들에 작성되어 있음. 사각형들은 `bg-gray-400`의 선으로 위에서 아래로 이어져 있음.
