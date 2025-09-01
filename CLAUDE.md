@@ -47,7 +47,6 @@
         - A: The first and perhaps main difference is the type of the tasks. All Tournament tasks are “open-type” and don’t have certain solutions in contrast to Olympiad tasks. Sometimes a task author doesn’t know the right solution and whether there is any solution.
           Secondly, the Tournament is a team event (teams of 4 to 6 people take part in it). So not only personal skills are important, but a capacity for teamwork and communication skills. Also it’s very important to build a right strategy but that’s the topic for another discussion.
 - /participation
-  - 업데이트 예정
   - 화면 중앙에 Participation 표시, 배경은 `minsa.jpg`이고 스크롤 하면 `bg-gray-200`회색 바탕의 내용으로 넘어감 (`about.jpg`의 하단을 흐릿하게 하여 회색 바탕으로 자연스럽게 이어지게 함.) 회색 바탕의 내용에는 다음 요소들이 순차적으로 나열됨. 각 요소들은 둥근 모서리를 가진 흰색 사각형들 위에 적혀 있음.
     - 소제목: Who can participate in IChTo?
       - 텍스트: A team consists of 4-6 high school students representing the same country. They do not have to be enrolled in the same high school. Each country can register up to 2 teams, besides the host country, which can register up to 3 teams
