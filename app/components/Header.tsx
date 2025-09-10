@@ -68,7 +68,7 @@ export function Header() {
       <div className="container mx-auto px-4 pt-3">
         <div className="flex items-center justify-between h-20">
           {/* Left side - Logo */}
-          <div className="bg-gray-50 rounded-3xl px-3 py-3">
+          <div className="bg-gray-50 rounded-3xl px-3 py-3 border border-gray-200 shadow-lg">
             <Link to="/">
               <img 
                 src="/ichtoLogo180ai.png"
@@ -80,7 +80,7 @@ export function Header() {
 
           {/* Right side - Desktop Navigation */}
           <div 
-            className="hidden md:flex bg-gray-50 rounded-3xl pl-6 pr-4 py-3"
+            className="hidden md:flex bg-gray-50 rounded-3xl pl-6 pr-4 py-3 border border-gray-200 shadow-lg"
             onMouseLeave={handleDropdownLeave}
           >
             <nav className="flex items-center space-x-6">
@@ -164,7 +164,7 @@ export function Header() {
 
               {/* Partners Dropdown */}
               <div 
-                className="relative h-11 flex items-center"
+                className="relative h-11 flex items-center mr-3"
                 onMouseEnter={() => handleDropdownEnter('partners')}
               >
                 <Link
@@ -200,7 +200,7 @@ export function Header() {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden bg-gray-50 rounded-3xl px-3 py-3">
+          <div className="md:hidden bg-gray-50 rounded-3xl px-3 py-3 border border-gray-200 shadow-lg">
             <button
               className="flex items-center justify-center w-11 h-11"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
