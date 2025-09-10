@@ -7,27 +7,27 @@ export function Header() {
 
   const dropdownMenus = {
     about: [
-      { name: 'Introducing IChTo', href: '/about', hash: '#introducing' },
-      { name: 'Rules and Format', href: '/about', hash: '#rules' },
-      { name: 'Welcome Message', href: '/about', hash: '#welcome' },
-      { name: 'Organizing Committee', href: '/about', hash: '#committee' },
-      { name: 'Jury Members', href: '/about', hash: '#jury' },
-      { name: 'Past Competitions', href: '/about', hash: '#past' },
+      { name: 'Introducing IChTo', href: '/about' },
+      { name: 'Rules and Format', href: '/rules' },
+      { name: 'Welcome Message', href: '/welcome' },
+      { name: 'Organizing Committee', href: '/committee' },
+      { name: 'Jury Members', href: '/jury' },
+      { name: 'Past Competitions', href: '/past' },
     ],
     participation: [
-      { name: 'Official Problems', href: '/participation', hash: '#problems' },
-      { name: 'Welcome to Korea', href: '/participation', hash: '#korea' },
-      { name: 'About the Venue', href: '/participation', hash: '#venue' },
+      { name: 'Official Problems', href: '/problems' },
+      { name: 'Welcome to Korea', href: '/korea' },
+      { name: 'About the Venue', href: '/venue' },
     ],
     program: [
-      { name: 'Results', href: '/program', hash: '#results' },
-      { name: 'Schedule', href: '/program', hash: '#schedule' },
-      { name: 'Cultural Moments', href: '/program', hash: '#cultural' },
-      { name: 'Accommodation', href: '/program', hash: '#accommodation' },
-      { name: 'Useful Informations', href: '/program', hash: '#info' },
+      { name: 'Results', href: '/presults' },
+      { name: 'Schedule', href: '/schedule' },
+      { name: 'Cultural Moments', href: '/cultural' },
+      { name: 'Accommodation', href: '/accommodation' },
+      { name: 'Useful Informations', href: '/info' },
     ],
     partners: [
-      { name: 'Sponsors', href: '/partners', hash: '#sponsors' },
+      { name: 'Sponsors', href: '/sponsors' },
     ],
   };
 
@@ -68,7 +68,7 @@ export function Header() {
       <div className="container mx-auto px-4 pt-3">
         <div className="flex items-center justify-between h-20">
           {/* Left side - Logo */}
-          <div className="bg-gray-50 rounded-3xl px-3 py-3 border border-gray-200 shadow-lg">
+          <div className="bg-white rounded-3xl px-3 py-3 border border-gray-200 shadow-lg">
             <Link to="/">
               <img 
                 src="/ichtoLogo180ai.png"
@@ -80,7 +80,7 @@ export function Header() {
 
           {/* Right side - Desktop Navigation */}
           <div 
-            className="hidden md:flex bg-gray-50 rounded-3xl pl-6 pr-4 py-3 border border-gray-200 shadow-lg"
+            className="hidden md:flex bg-white rounded-3xl pl-6 pr-4 py-3 border border-gray-200 shadow-lg"
             onMouseLeave={handleDropdownLeave}
           >
             <nav className="flex items-center space-x-6">
@@ -89,18 +89,17 @@ export function Header() {
                 className="relative h-11 flex items-center"
                 onMouseEnter={() => handleDropdownEnter('about')}
               >
-                <Link
-                  to="/about"
+                <button
                   className="text-gray-700 hover:text-blue-900 transition-colors text-lg"
                 >
                   About IChTo
-                </Link>
+                </button>
                 {activeDropdown === 'about' && (
                   <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-xl shadow-lg border border-gray-200 py-2 z-50">
                     {dropdownMenus.about.map((item, index) => (
                       <Link
                         key={index}
-                        to={`${item.href}${item.hash}`}
+                        to={`${item.href}`}
                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-blue-900"
                       >
                         {item.name}
@@ -115,18 +114,17 @@ export function Header() {
                 className="relative h-11 flex items-center"
                 onMouseEnter={() => handleDropdownEnter('participation')}
               >
-                <Link
-                  to="/participation"
+                <button
                   className="text-gray-700 hover:text-blue-900 transition-colors text-lg"
                 >
                   Participation
-                </Link>
+                </button>
                 {activeDropdown === 'participation' && (
                   <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-xl shadow-lg border border-gray-200 py-2 z-50">
                     {dropdownMenus.participation.map((item, index) => (
                       <Link
                         key={index}
-                        to={`${item.href}${item.hash}`}
+                        to={`${item.href}`}
                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-blue-900"
                       >
                         {item.name}
@@ -141,18 +139,17 @@ export function Header() {
                 className="relative h-11 flex items-center"
                 onMouseEnter={() => handleDropdownEnter('program')}
               >
-                <Link
-                  to="/program"
+                <button
                   className="text-gray-700 hover:text-blue-900 transition-colors text-lg"
                 >
                   Program
-                </Link>
+                </button>
                 {activeDropdown === 'program' && (
                   <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-xl shadow-lg border border-gray-200 py-2 z-50">
                     {dropdownMenus.program.map((item, index) => (
                       <Link
                         key={index}
-                        to={`${item.href}${item.hash}`}
+                        to={`${item.href}`}
                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-blue-900"
                       >
                         {item.name}
@@ -167,18 +164,17 @@ export function Header() {
                 className="relative h-11 flex items-center mr-3"
                 onMouseEnter={() => handleDropdownEnter('partners')}
               >
-                <Link
-                  to="/partners"
+                <button
                   className="text-gray-700 hover:text-blue-900 transition-colors text-lg"
                 >
                   Partners
-                </Link>
+                </button>
                 {activeDropdown === 'partners' && (
                   <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-xl shadow-lg border border-gray-200 py-2 z-50">
                     {dropdownMenus.partners.map((item, index) => (
                       <Link
                         key={index}
-                        to={`${item.href}${item.hash}`}
+                        to={`${item.href}`}
                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-blue-900"
                       >
                         {item.name}
@@ -200,7 +196,7 @@ export function Header() {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden bg-gray-50 rounded-3xl px-3 py-3 border border-gray-200 shadow-lg">
+          <div className="md:hidden bg-white rounded-3xl px-3 py-3 border border-gray-200 shadow-lg">
             <button
               className="flex items-center justify-center w-11 h-11"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -217,7 +213,7 @@ export function Header() {
 
         {/* Mobile Menu */}
         <div className={`md:hidden ${isMobileMenuOpen ? 'block' : 'hidden'}`}>
-          <div className="mt-2 bg-gray-50 rounded-3xl px-6 py-4 space-y-4">
+          <div className="mt-2 bg-white rounded-3xl px-6 py-4 space-y-4">
             {/* About IChTo Mobile */}
             <div>
               <button
@@ -234,7 +230,7 @@ export function Header() {
                   {dropdownMenus.about.map((item, index) => (
                     <Link
                       key={index}
-                      to={`${item.href}${item.hash}`}
+                      to={`${item.href}`}
                       className="block text-sm text-gray-600 hover:text-blue-900"
                       onClick={() => {
                         setIsMobileMenuOpen(false);
@@ -264,7 +260,7 @@ export function Header() {
                   {dropdownMenus.participation.map((item, index) => (
                     <Link
                       key={index}
-                      to={`${item.href}${item.hash}`}
+                      to={`${item.href}`}
                       className="block text-sm text-gray-600 hover:text-blue-900"
                       onClick={() => {
                         setIsMobileMenuOpen(false);
@@ -294,7 +290,7 @@ export function Header() {
                   {dropdownMenus.program.map((item, index) => (
                     <Link
                       key={index}
-                      to={`${item.href}${item.hash}`}
+                      to={`${item.href}`}
                       className="block text-sm text-gray-600 hover:text-blue-900"
                       onClick={() => {
                         setIsMobileMenuOpen(false);
@@ -324,7 +320,7 @@ export function Header() {
                   {dropdownMenus.partners.map((item, index) => (
                     <Link
                       key={index}
-                      to={`${item.href}${item.hash}`}
+                      to={`${item.href}`}
                       className="block text-sm text-gray-600 hover:text-blue-900"
                       onClick={() => {
                         setIsMobileMenuOpen(false);
