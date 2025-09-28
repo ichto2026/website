@@ -44,21 +44,21 @@ export default function About() {
       <div className="container mx-auto px-4 text-center mb-16 md:my-32 flex flex-col md:flex-row items-center gap-y-10 md:items-start justify-center gap-x-20">
         <div className="flex flex-col items-center">
           <Users className="w-12 h-12 text-blue-800 mb-4" />
-          <h3 className="text-2xl font-bold text-gray-900 mb-2">100+ Participants</h3>
+          <h3 className="text-2xl font-bold text-gray-900 mb-2">n+ Participants</h3>
           <p className="text-gray-600">Gathered in a week</p>
         </div>
         <div className="flex flex-col items-center">
           <Flag className="w-12 h-12 text-blue-800 mb-4" />
-          <h3 className="text-2xl font-bold text-gray-900 mb-2">80+ Countries</h3>
+          <h3 className="text-2xl font-bold text-gray-900 mb-2">n+ Countries</h3>
           <p className="text-gray-600">Represented</p>
         </div>
         <div className="flex flex-col items-center">
           <IdCard className="w-12 h-12 text-blue-800 mb-4" />
-          <h3 className="text-2xl font-bold text-gray-900 mb-2">400 Candidates</h3>
+          <h3 className="text-2xl font-bold text-gray-900 mb-2">n Candidates</h3>
         </div>
         <div className="flex flex-col items-center">
           <Languages className="w-12 h-12 text-blue-800 mb-4" />
-          <h3 className="text-2xl font-bold text-gray-900 mb-2">50 Languages</h3>
+          <h3 className="text-2xl font-bold text-gray-900 mb-2">n Languages</h3>
         </div>
       </div>
 
