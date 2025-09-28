@@ -8,21 +8,21 @@
 html,
 body {
   @apply bg-white;
-  min-width: 100vw;
+  /* min-width: 100vw; */
 }
 
 
 .landing-container {
-  scroll-snap-type: y mandatory;
+  /* scroll-snap-type: y mandatory; */
   overflow-y: scroll;
   overflow-x: hidden;
   height: 100vh;
   width: 100vw;
 }
 
-.landing-container section {
+/* .landing-container section {
   scroll-snap-align: start;
-}
+} */
 
 .emphasis {
   @apply font-bold text-blue-800;

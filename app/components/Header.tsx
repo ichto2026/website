@@ -21,7 +21,7 @@ export function Header() {
       { name: 'About the Venue', href: '/venue' },
     ],
     program: [
-      { name: 'Results', href: '/presults' },
+      { name: 'Results', href: '/results' },
       { name: 'Schedule', href: '/schedule' },
       { name: 'Cultural Moments', href: '/cultural' },
       { name: 'Accommodation', href: '/accommodation' },
@@ -49,7 +49,7 @@ export function Header() {
       {/* Mobile Menu Overlay */}
       {isMobileMenuOpen && (
         <div 
-          className="fixed inset-0 bg-black opacity-50 z-40 md:hidden"
+          className="fixed inset-0 bg-black opacity-50 z-40 lg:hidden"
           onClick={() => {
             setIsMobileMenuOpen(false);
             setActiveMobileDropdown(null);
@@ -69,19 +69,19 @@ export function Header() {
         <div className="container mx-auto px-4 pt-3">
           <div className="flex items-start justify-between h-20">
             {/* Left side - Logo */}
-            <div className="bg-white rounded-3xl px-3 py-3 border border-gray-200 shadow-lg">
-              <Link to="/">
-                <img 
-                  src="/ichtoLogo180ai.png"
-                  alt="IChTo Logo" 
-                  className="h-11 w-11"
-                />
-              </Link>
-            </div>
+            <Link to="/">
+              <div className="bg-white rounded-3xl px-3 py-3 border border-gray-200 shadow-lg">
+                  <img 
+                    src="/ichtoLogo180ai.png"
+                    alt="IChTo Logo" 
+                    className="h-11 w-11"
+                  />
+              </div>
+            </Link>
 
             {/* Right side - Desktop Navigation */}
             <div 
-              className="hidden md:flex bg-white rounded-3xl pl-6 pr-4 py-3 border border-gray-200 shadow-lg"
+              className="hidden lg:flex bg-white rounded-3xl pl-6 pr-4 py-3 border border-gray-200 shadow-lg"
               onMouseLeave={handleDropdownLeave}
               onMouseEnter={() => handleDropdownEnter()}
             >
@@ -186,7 +186,7 @@ export function Header() {
             </div>
 
             {/* Mobile Menu Button */}
-            <div className="md:hidden bg-white rounded-3xl px-3 py-3 border border-gray-200 shadow-lg">
+            <div className="lg:hidden bg-white rounded-3xl px-3 py-3 border border-gray-200 shadow-lg">
               <button
                 className="flex items-center justify-center w-11 h-11"
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -202,7 +202,7 @@ export function Header() {
           </div>
 
           {/* Mobile Menu */}
-          <div className={`md:hidden ${isMobileMenuOpen ? 'block' : 'hidden'}`}>
+          <div className={`lg:hidden ${isMobileMenuOpen ? 'block' : 'hidden'}`}>
             <div className="mt-2 bg-white rounded-3xl px-6 py-4 space-y-4">
               {/* About IChTo Mobile */}
               <div>

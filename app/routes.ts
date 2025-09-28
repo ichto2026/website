@@ -12,5 +12,6 @@ export default [
     route("participation", "routes/participation.tsx"),
     route("program", "routes/program.tsx"),
     route("register", "routes/register.tsx"),
+    route("sponsors", "routes/sponsors.tsx"),
   ]),
 ] satisfies RouteConfig;
