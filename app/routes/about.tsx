@@ -16,7 +16,7 @@ export default function About() {
       <HeroImage title="Introducing IChTo" imageUrl="/about.jpg" />
 
       {/* About Section */}
-      <div className="container mx-auto px-4 relative z-10 md:w-320 my-16 md:my-32">
+      <div className="container mx-auto px-4 relative z-10 md:w-320 my-16 md:my-42">
         <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
           <div className="text-center">
             <img 
@@ -41,7 +41,7 @@ export default function About() {
         </div>
       </div>
 
-      <div className="container mx-auto px-4 text-center mb-16 md:my-32 flex flex-col md:flex-row items-center gap-y-10 md:items-start justify-center gap-x-20">
+      <div className="container mx-auto px-4 text-center mb-16 md:my-42 flex flex-col md:flex-row items-center gap-y-10 md:items-start justify-center gap-x-20">
         <div className="flex flex-col items-center">
           <Users className="w-12 h-12 text-blue-800 mb-4" />
           <h3 className="text-2xl font-bold text-gray-900 mb-2">n+ Participants</h3>
@@ -62,7 +62,7 @@ export default function About() {
         </div>
       </div>
 
-      <div className="container mx-auto px-4 relative z-10 md:w-320 mb-16 md:my-32">
+      <div className="container mx-auto px-4 relative z-10 md:w-320 mb-16 md:my-42">
         <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
           <div>
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-8 md:mb-14 text-gray-900">
@@ -83,7 +83,7 @@ export default function About() {
         </div>
       </div>
 
-      <div className="container mx-auto px-4 relative z-10 md:w-320 mb-16 md:my-32">
+      <div className="container mx-auto px-4 relative z-10 md:w-320 mb-16 md:my-42">
         <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
           <div className="text-center">
             <img 

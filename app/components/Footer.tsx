@@ -2,9 +2,9 @@ import { Link } from "react-router";
 
 export function Footer() {
   return (
-    <footer className="bg-gray-800 text-white py-6">
+    <footer className="bg-gray-800 text-white py-6 md:h-50">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row justify-between items-center">
+        <div className="flex flex-col md:flex-row justify-between items-start mt-4">
           {/* 좌측: Where to find us와 소셜미디어 링크들 */}
           <div className="flex flex-row items-start space-x-4 md:space-x-16 mb-4 md:mb-0">
             <div className="mb-4 md:mb-0">
@@ -37,7 +37,7 @@ export function Footer() {
           
 
           {/* 우측 */}
-          <div className="text-center text-gray-300 md:flex md:flex-row space-x-1 space-y-1">
+          <div className="text-center text-gray-300 md:flex md:flex-row space-x-1 space-y-1 mt-18">
             <h4 className="text-gray-100 md:mr-6"><Link to="/faq">FAQ</Link></h4>
             <h4>© 2025-2026 IChTo 2026.</h4>
             <h4>All rights reserved.</h4>

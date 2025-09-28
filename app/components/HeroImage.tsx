@@ -5,7 +5,7 @@ export default function HeroImage(props: { title: string, imageUrl: string }) {
         style={{
           backgroundImage: `url('${props.imageUrl}')`,
           backgroundAttachment: 'fixed',
-          height: '25vh'
+          height: '42vh'
         }}
       >
         <div className="absolute inset-0 bg-black opacity-40 backdrop-blur-sm"></div>
