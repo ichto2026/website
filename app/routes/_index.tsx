@@ -1,8 +1,4 @@
-import type { Route } from "./+types/home";
-import { Header } from "../components/Header";
-import { Footer } from "../components/Footer";
-
-import { Users, Flag, IdCard, Languages } from "lucide-react";
+import type { Route } from "./+types/_index";
 
 export function meta({}: Route.MetaArgs) {
   return [

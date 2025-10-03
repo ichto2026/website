@@ -1,6 +1,7 @@
 import HeroImage from "~/components/HeroImage";
 import type { Route } from "./+types/about";
 import { Users, Flag, IdCard, Languages } from "lucide-react";
+import ImageNText from "~/components/ImageNText";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -10,38 +11,25 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export default function About() {
+  const descAbout = `is a team competition for high school students, 
+    with a format based on scientific debates starting from problems with open solutions. Having a 
+    novel approach in education, as compared to classical Olympiads, the accent is on both scientific 
+    and soft skills. As a result, creativity, teamwork, critical thinking, and public speaking are 
+    very important to succeed in this contest.`
   return (
     <div className="min-h-screen">
       {/* Hero Section with About.jpg background */}
       <HeroImage title="Introducing IChTo" imageUrl="/about.jpg" />
 
       {/* About Section */}
-      <div className="container mx-auto px-4 relative z-10 md:w-320 my-16 md:my-42">
-        <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-          <div className="text-center">
-            <img 
-              src="/ICT-color-1.png" 
-              alt="IChTo 2026 Logo" 
-              className="max-w-full h-auto mx-auto hidden md:block"
-              style={{ maxHeight: "300px" }}
-            />
-          </div>
-          <div>
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-8 md:mb-14 text-gray-900">
-              <span className="emphasis">IChTo 2026</span>
-            </h2>
-            <p className="text-base md:text-lg text-gray-700 leading-relaxed mb-6 md:mb-10">
-              is a team competition for high school students, 
-              with a format based on scientific debates starting from problems with open solutions. Having a 
-              novel approach in education, as compared to classical Olympiads, the accent is on both scientific 
-              and soft skills. As a result, creativity, teamwork, critical thinking, and public speaking are 
-              very important to succeed in this contest.
-            </p>
-          </div>
-        </div>
-      </div>
+      <ImageNText
+        title="IChTo 2026"
+        description={descAbout}
+        imageUrl="/ICT-color-1.png"
+        imageAlt="IChTo 2026 Logo"
+      />
 
-      <div className="container mx-auto px-4 text-center mb-16 md:my-42 flex flex-col md:flex-row items-center gap-y-10 md:items-start justify-center gap-x-20">
+      <div className="container mx-auto px-4 text-center mb-16 lg:my-36 flex flex-col md:flex-row items-center gap-y-10 md:items-start justify-center gap-x-20">
         <div className="flex flex-col items-center">
           <Users className="w-12 h-12 text-blue-800 mb-4" />
           <h3 className="text-2xl font-bold text-gray-900 mb-2">n+ Participants</h3>
@@ -62,47 +50,41 @@ export default function About() {
         </div>
       </div>
 
-      <div className="container mx-auto px-4 relative z-10 md:w-320 mb-16 md:my-42">
-        <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-          <div>
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-8 md:mb-14 text-gray-900">
-              <span className="emphasis">Scientific Debate</span>
-            </h2>
-            <p className="text-base md:text-lg text-gray-700 leading-relaxed mb-6 md:mb-10">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi iusto quam autem aperiam debitis facere dignissimos aspernatur sequi quia dolores, qui ducimus necessitatibus vel excepturi itaque exercitationem voluptate, at nesciunt.
-            </p>
-          </div>
-          <div className="text-center">
-            <img 
-              src="/ICT-color-1.png" 
-              alt="IChTo 2026 Logo" 
-              className="max-w-full h-auto mx-auto hidden md:block"
-              style={{ maxHeight: "300px" }}
-            />
-          </div>
+      <div className="bg-[url('/minsa.jpg')] my-16 overflow-auto">
+        <div className="bg-white/50 backdrop-blur-sm overflow-auto">
+          {/* Scientific Debate Section */}
+          <ImageNText
+            title="Scientific Debate"
+            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi iusto quam autem aperiam debitis facere dignissimos aspernatur sequi quia dolores, qui ducimus necessitatibus vel excepturi itaque exercitationem voluptate, at nesciunt."
+            imageUrl="/ICT-color-1.png"
+            imageAlt="IChTo 2026 Logo"
+            reverse={true}
+          />
+
+          {/* Scholarly Discussion Section */}
+          <ImageNText
+            title="Scholarly Discussion"
+            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi iusto quam autem aperiam debitis facere dignissimos aspernatur sequi quia dolores, qui ducimus necessitatibus vel excepturi itaque exercitationem voluptate, at nesciunt."
+            imageUrl="/ICT-color-1.png"
+            imageAlt="IChTo 2026 Logo"
+          />
         </div>
       </div>
 
-      <div className="container mx-auto px-4 relative z-10 md:w-320 mb-16 md:my-42">
-        <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-          <div className="text-center">
-            <img 
-              src="/ICT-color-1.png" 
-              alt="IChTo 2026 Logo" 
-              className="max-w-full h-auto mx-auto hidden md:block"
-              style={{ maxHeight: "300px" }}
-            />
-          </div>
-          <div>
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-8 md:mb-14 text-gray-900">
-              <span className="emphasis">Scholarly Discussion</span>
-            </h2>
-            <p className="text-base md:text-lg text-gray-700 leading-relaxed mb-6 md:mb-10">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi iusto quam autem aperiam debitis facere dignissimos aspernatur sequi quia dolores, qui ducimus necessitatibus vel excepturi itaque exercitationem voluptate, at nesciunt.
-            </p>
-          </div>
-        </div>
-      </div>
+
+      {/* Welcome Section */}
+      <h1 className="text-4xl lg:text-6xl font-bold px-4 my-8 md:text-center text-blue-800">
+        Welcome Message
+      </h1>
+      <ImageNText
+        title="Dr. Ha-Shik Park"
+        subtitle="Headmaster of Korean Minjok Leadership Academy"
+        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi iusto quam autem aperiam debitis facere dignissimos aspernatur sequi quia dolores, qui ducimus necessitatibus vel excepturi itaque exercitationem voluptate, at nesciunt."
+        imageUrl="/headmaster.jpg"
+        imageAlt="Photo of Headmaster Ha-Shik Park"
+        imageMaxHeight={400}
+        reverse={true}
+      />
 
       {/* Content Section */}
       {/* <div className="bg-gray-50 py-16 relative">

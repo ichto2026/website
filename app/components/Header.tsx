@@ -10,8 +10,6 @@ export function Header() {
     about: [
       { name: 'Introducing IChTo', href: '/about' },
       { name: 'Rules and Format', href: '/rules' },
-      { name: 'Welcome Message', href: '/welcome' },
-      { name: 'Organizing Committee', href: '/committee' },
       { name: 'Jury Members', href: '/jury' },
       { name: 'Past Competitions', href: '/past' },
     ],
