@@ -6,8 +6,8 @@ import {
 } from "@react-router/dev/routes";
 
 export default [
-  index("routes/home.tsx"),
   layout("layouts/main-layout.tsx", [
+    index("routes/home.tsx"),
     route("about", "routes/about.tsx"),
     route("participation", "routes/participation.tsx"),
     route("program", "routes/program.tsx"),
