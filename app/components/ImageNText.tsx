@@ -25,8 +25,8 @@ export default function ImageNText({
   title: string;
   subtitle?: string;
   description: string;
-  imageUrl: string;
-  imageAlt: string;
+  imageUrl?: string;
+  imageAlt?: string;
   reverse?: boolean;
   revTextColor?: boolean;
   imageMaxHeight?: number;
@@ -35,7 +35,7 @@ export default function ImageNText({
   return (
     <div className={`container mx-auto px-4 relative z-10 md:w-320 my-8 lg:my-${lgMy.toString()}`}>
       <div className={`flex space-x-12 flex-1 items-center`}>
-        {!reverse && imageUrl && (<ImageBox imageUrl={imageUrl} imageAlt={imageAlt} imageMaxHeight={imageMaxHeight} />)}
+        {!reverse && imageUrl && imageAlt && (<ImageBox imageUrl={imageUrl} imageAlt={imageAlt} imageMaxHeight={imageMaxHeight} />)}
         <div className="flex-4">
           <h2 className={`text-2xl md:text-3xl lg:text-4xl font-bold mb-4 ${!subtitle ? "md:mb-14" : "md:mb-4"} ${revTextColor ? "text-gray-200" : "text-gray-900"}`}>
             {title}
@@ -49,7 +49,7 @@ export default function ImageNText({
             {description}
           </p>
         </div>
-        {reverse && imageUrl && (<ImageBox imageUrl={imageUrl} imageAlt={imageAlt} imageMaxHeight={imageMaxHeight} />)}
+        {reverse && imageUrl && imageAlt && (<ImageBox imageUrl={imageUrl} imageAlt={imageAlt} imageMaxHeight={imageMaxHeight} />)}
       </div>
     </div>
   );
