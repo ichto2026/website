@@ -1,5 +1,6 @@
 import HeroImage from "~/components/HeroImage";
 import type { Route } from "./+types/about";
+import { Users, Flag, IdCard, Languages } from "lucide-react";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -20,7 +21,7 @@ export default function Sponsors() {
           Our Sponsors
         </h2> */}
         <div className="text-gray-600">
-          <p>Sponsor information will be updated soon.</p>
+          <p>Jury member information will be updated soon.</p>
         </div>
       </div>
     </div>
