@@ -3,8 +3,8 @@ import type { Route } from "./+types/about";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "About - IChTo 2026" },
-    { name: "description", content: "About International Chemistry Tournament 2026" },
+    { title: "Sponsors - IChTo 2026" },
+    { name: "description", content: "Sponsors of International Chemistry Tournament 2026" },
   ];
 }
 
