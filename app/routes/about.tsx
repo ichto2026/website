@@ -11,11 +11,7 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export default function About() {
-  const descAbout = `is a team competition for high school students, 
-    with a format based on scientific debates starting from problems with open solutions. Having a 
-    novel approach in education, as compared to classical Olympiads, the accent is on both scientific 
-    and soft skills. As a result, creativity, teamwork, critical thinking, and public speaking are 
-    very important to succeed in this contest.`
+  const descAbout = "is a team competition for high school students, with a format based on scientific debates starting from problems with open solutions. Having a novel approach in education, as compared to classical Olympiads, the accent is on both scientific and soft skills. As a result, creativity, teamwork, critical thinking, and public speaking are very important to succeed in this contest."
   return (
     <div className="min-h-screen">
       {/* Hero Section with About.jpg background */}

@@ -1,41 +1,42 @@
-function ImageBox({ imageUrl, imageAlt, imageMaxHeight }: { imageUrl: string; imageAlt: string; imageMaxHeight: number }) {
+function MapBox({ mapUrl }: { mapUrl: string }) {
   return (
-    <div className="text-center flex-3 hidden md:block">
-      <img 
-        src={imageUrl}
-        alt={imageAlt}
+    <div className="text-center flex-3 hidden md:block h-[300px]">
+      {/* <img 
+        src={mapUrl}
         className="max-w-full h-auto mx-auto"
-        style={{ maxHeight: imageMaxHeight }}
-      />
+      /> */}
+      <iframe
+        src={mapUrl}
+        width="100%"
+        height="100%" 
+        style={{ border: 0 }}
+        allowFullScreen
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+        className="mx-auto max-w-full"
+      ></iframe>
     </div>
   );
 }
 
-export default function ImageNText({
+export default function TextNMap({
   title,
   subtitle,
   description,
-  imageUrl,
-  imageAlt,
-  reverse = false,
+  mapUrl,
   revTextColor = false,
-  imageMaxHeight = 300,
   lgMy = 36,
 }: {
   title: string;
   subtitle?: string;
   description: string;
-  imageUrl?: string;
-  imageAlt?: string;
-  reverse?: boolean;
+  mapUrl: string;
   revTextColor?: boolean;
-  imageMaxHeight?: number;
   lgMy?: number;
 }) {
   return (
     <div className={`container mx-auto px-4 relative z-10 md:w-320 my-8 lg:my-${lgMy.toString()}`}>
       <div className={`flex space-x-12 flex-1 items-center whitespace-pre-wrap`}>
-        {!reverse && imageUrl && imageAlt && (<ImageBox imageUrl={imageUrl} imageAlt={imageAlt} imageMaxHeight={imageMaxHeight} />)}
         <div className="flex-4">
           <h2 className={`text-2xl md:text-3xl lg:text-4xl font-bold mb-4 ${!subtitle ? "md:mb-14" : "md:mb-4"} ${revTextColor ? "text-gray-200" : "text-gray-900"}`}>
             {title}
@@ -49,7 +50,7 @@ export default function ImageNText({
             {description}
           </p>
         </div>
-        {reverse && imageUrl && imageAlt && (<ImageBox imageUrl={imageUrl} imageAlt={imageAlt} imageMaxHeight={imageMaxHeight} />)}
+        <MapBox mapUrl={mapUrl} />
       </div>
     </div>
   );

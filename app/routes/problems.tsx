@@ -93,9 +93,16 @@ export default function Problems() {
           </p>
         </div>
         <div className="text-blue-800 px-4 my-8">
-          <Link to="http://ichto.org/media/uploads/2025/04/IChTo-2025-problem-set.pdf">
-          Download the full problem set
-          </Link>
+          <p className="my-4">
+            <Link to="http://ichto.org/media/uploads/2025/04/IChTo-2025-problem-set.pdf">
+              Download the full problem set
+            </Link>
+          </p>
+          <p className="my-4">
+            <Link to="http://ichto.org/en/problems/">
+              Problems of the other past tournaments
+            </Link>
+          </p>
         </div>
       </div>
     </div>
