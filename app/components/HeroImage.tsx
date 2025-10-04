@@ -1,11 +1,11 @@
 export default function HeroImage(props: { title: string, imageUrl: string }) {
   return (
     <div 
-      className="flex items-center justify-center relative bg-cover bg-center md:mb-12 lg:mb-24"
+      className="flex items-center justify-center relative bg-cover bg-center md:mb-12 lg:mb-24 h-[20vh] lg:h-[42vh]"
       style={{
         backgroundImage: `url('${props.imageUrl}')`,
         backgroundAttachment: 'fixed',
-        height: '42vh'
+        // height: '42vh'
       }}
     >
       <div className="absolute inset-0 bg-black opacity-40 backdrop-blur-sm"></div>

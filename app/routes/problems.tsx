@@ -16,13 +16,13 @@ export default function Problems() {
       <HeroImage title="Our Problems" imageUrl="/about.jpg" />
 
       {/* Problems Section */}
-      <div className="container mx-auto px-4 my-32">
+      <div className="container mx-auto px-4">
         <div className="text-gray-800">
           <p className="px-4 my-4">
             Problem set of IChTo-2026 will be released soon.
           </p>
-          <h1 className="text-4xl lg:text-6xl font-bold px-4 my-8">
-            Problem set of IChTo-2025<br />(Bucharest, Romania)
+          <h1 className="text-4xl lg:text-5xl font-bold px-4 my-8">
+            Problem set of IChTo-2025 (Bucharest, Romania)
           </h1>
           <h2 className="text-3xl lg:text-4xl px-4 my-8">Problem 1. Blue Irises</h2>
           <p className="px-4 my-4">
