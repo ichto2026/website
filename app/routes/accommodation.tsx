@@ -15,7 +15,7 @@ export default function Jury() {
       <HeroImage title="Our Jury" imageUrl="/about.jpg" />
 
       {/* Jury Section */}
-      <div className="container mx-auto px-4 text-center my-32">
+      <div className="container mx-auto px-4 text-center">
         <div className="max-w-4xl mx-auto mb-16">
           <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">Accommodation</h2>
           <div className="p-8">

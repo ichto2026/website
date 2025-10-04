@@ -16,7 +16,7 @@ export default function Sponsors() {
 
       {/* Sponsors Section */}
       <div className="container mx-auto px-4 text-center">
-        <div className="my-16">
+        <div className="mb-8">
           <h2 className="text-4xl md:text-6xl font-bold mb-12 text-gray-900">
             Patronages and Sponsors
           </h2>
