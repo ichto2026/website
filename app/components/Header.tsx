@@ -23,7 +23,7 @@ export function Header() {
       { name: 'Schedule', href: '/schedule' },
       { name: 'Cultural Moments', href: '/cultural' },
       { name: 'Accommodation', href: '/accommodation' },
-      { name: 'Useful Informations', href: '/info' },
+      { name: 'Useful Information', href: '/info' },
     ],
     partners: [
       { name: 'Sponsors', href: '/sponsors' },

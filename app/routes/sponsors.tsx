@@ -15,12 +15,22 @@ export default function Sponsors() {
       <HeroImage title="Our Sponsors" imageUrl="/about.jpg" />
 
       {/* Sponsors Section */}
-      <div className="container mx-auto px-4 text-center my-32">
-        {/* <h2 className="text-3xl md:text-4xl font-bold mb-12 text-gray-900">
-          Our Sponsors
-        </h2> */}
-        <div className="text-gray-600">
-          <p>Sponsor information will be updated soon.</p>
+      <div className="container mx-auto px-4 text-center">
+        <div className="my-16">
+          <h2 className="text-4xl md:text-6xl font-bold mb-12 text-gray-900">
+            Patronages and Sponsors
+          </h2>
+          <div className="text-gray-600">
+            <p>Sponsor information will be updated soon.</p>
+          </div>
+        </div>
+        <div className="my-16">
+          <h2 className="text-4xl md:text-6xl font-bold mb-12 text-gray-900">
+            Our Supporters
+          </h2>
+          <div className="text-gray-600">
+            <p>Sponsor information will be updated soon.</p>
+          </div>
         </div>
       </div>
     </div>
