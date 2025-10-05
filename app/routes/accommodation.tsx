@@ -21,7 +21,7 @@ export default function Accommodation() {
           <div className="p-8">
             <div className="flex flex-col md:flex-row items-center md:justify-around mb-8 space-y-4 md:space-y-0">
               <img 
-                src="/accomodation_logo.svg" 
+                src="/accommodation_logo.svg" 
                 alt="Welli Hilli Park Logo" 
                 className="h-16"
               />
@@ -31,14 +31,14 @@ export default function Accommodation() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
               <div>
                 <img 
-                  src="/accomodation_outdoor.jpg" 
+                  src="/accommodation_outdoor.jpg" 
                   alt="Welli Hilli Park Outdoor View" 
                   className="w-full h-64 object-cover rounded-lg"
                 />
               </div>
               <div>
                 <img 
-                  src="/accomodation_indoor.jpg" 
+                  src="/accommodation_indoor.jpg" 
                   alt="Welli Hilli Park Indoor View" 
                   className="w-full h-64 object-cover rounded-lg"
                 />

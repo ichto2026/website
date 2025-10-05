@@ -35,7 +35,7 @@ export default function Cultural() {
         <img src="/archery.jpg" alt="국궁" className="max-w-full mb-8 rounded-lg object-contain" />
         <div className="text-gray-700">
           <p>
-          Korean archery, known as Gukgung, is Korea's traditional archery that uses a unique composite bow called Gakgung. The Gakgung is crafted by combining natural materials including water buffalo horn, oak wood, bamboo, cattle sinew, and croaker fish glue, delivering remarkable elasticity and power despite its compact size.
+            Korean archery, known as Gukgung, is Korea's traditional archery that uses a unique composite bow called Gakgung. The Gakgung is crafted by combining natural materials including water buffalo horn, oak wood, bamboo, cattle sinew, and croaker fish glue, delivering remarkable elasticity and power despite its compact size.
           </p>
           <p className="mt-4">
             The shooting distance in Gukgung is 145 meters, where arrows fly in a parabolic trajectory requiring static concentration and breath control as essential elements. During the Joseon Dynasty, it was a mandatory subject in the military service examination, and today it continues as a recreational sport.
