@@ -45,7 +45,7 @@ export default function OrganizingCommittee() {
   return (
     <div className="min-h-screen">
       {/* Hero Section with About.jpg background */}
-      <HeroImage title="Organizing Committee" imageUrl="/about.jpg" />
+      <HeroImage title="Organizing Committee" imageUrl="/org.jpg" />
 
       {/* Organizing Committee Section */}
       <ImageNText

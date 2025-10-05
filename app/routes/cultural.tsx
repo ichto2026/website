@@ -12,7 +12,7 @@ export default function Cultural() {
   return (
     <div className="min-h-screen">
       {/* Hero Section with About.jpg background */}
-      <HeroImage title="Cultural Moments" imageUrl="/about.jpg" />
+      <HeroImage title="Cultural Moments" imageUrl="/cultural.jpg" />
 
       {/* 가야금 Section */}
       <div className="container max-w-4xl mx-auto px-4 mb-16">

@@ -12,7 +12,7 @@ export default function Sponsors() {
   return (
     <div className="min-h-screen">
       {/* Hero Section with About.jpg background */}
-      <HeroImage title="Sponsors" imageUrl="/about.jpg" />
+      <HeroImage title="Sponsors" imageUrl="/sponsors.jpg" />
 
       {/* Sponsors Section */}
       <div className="container mx-auto px-4 text-center">

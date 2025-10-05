@@ -13,7 +13,7 @@ export default function Problems() {
   return (
     <div className="min-h-screen">
       {/* Hero Section with About.jpg background */}
-      <HeroImage title="Official Problems" imageUrl="/about.jpg" />
+      <HeroImage title="Official Problems" imageUrl="/problems.jpg" />
 
       {/* Problems Section */}
       <div className="container mx-auto px-4">

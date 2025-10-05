@@ -4,7 +4,7 @@ export default function HeroImage(props: { title: string, imageUrl: string }) {
       className="flex items-center justify-center relative bg-cover bg-center mb-4 md:mb-12 lg:mb-24 h-[20vh] lg:h-[42vh]"
       style={{
         backgroundImage: `url('${props.imageUrl}')`,
-        backgroundAttachment: 'fixed',
+        // backgroundAttachment: 'fixed',
         // height: '42vh'
       }}
     >

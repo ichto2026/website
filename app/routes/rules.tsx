@@ -39,7 +39,7 @@ export default function Rules() {
   return (
     <div className="min-h-screen">
       {/* Hero Section with About.jpg background */}
-      <HeroImage title="Rules and Format" imageUrl="/about.jpg" />
+      <HeroImage title="Rules and Format" imageUrl="/rules.jpg" />
 
       {/* Rules Section */}
       <div className="container mx-auto px-4 text-center my-16 flex justify-around items-center">

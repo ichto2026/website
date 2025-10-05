@@ -12,7 +12,7 @@ export default function Korea() {
   return (
     <div className="min-h-screen">
       {/* Hero Section with About.jpg background */}
-      <HeroImage title="Welcome to Korea" imageUrl="/about.jpg" />
+      <HeroImage title="Welcome to Korea" imageUrl="/korea_page.jpg" />
 
       {/* Korea Section */}
       <div className="container max-w-4xl mx-auto px-4 mb-16">

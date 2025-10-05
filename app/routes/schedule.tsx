@@ -12,7 +12,7 @@ export default function Schedule() {
   return (
     <div className="min-h-screen">
       {/* Hero Section with About.jpg background */}
-      <HeroImage title="Schedule" imageUrl="/about.jpg" />
+      <HeroImage title="Schedule" imageUrl="/schedule.jpg" />
 
       {/* Schedule Section */}
       <div className="container mx-auto px-4 text-center overflow-auto">

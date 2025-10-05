@@ -12,7 +12,7 @@ export default function Jury() {
   return (
     <div className="min-h-screen">
       {/* Hero Section with About.jpg background */}
-      <HeroImage title="Useful Information" imageUrl="/about.jpg" />
+      <HeroImage title="Useful Information" imageUrl="/info.jpg" />
 
       {/* Jury Section */}
       <div className="container mx-auto px-4 text-center my-32">

@@ -12,7 +12,7 @@ export default function Accommodation() {
   return (
     <div className="min-h-screen">
       {/* Hero Section with About.jpg background */}
-      <HeroImage title="Accommodation" imageUrl="/about.jpg" />
+      <HeroImage title="Accommodation" imageUrl="/accommodation.jpg" />
 
       {/* Accommodation Section */}
       <div className="container mx-auto px-4 text-center">

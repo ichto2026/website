@@ -25,7 +25,7 @@ Participation: Cr₆Cl₆, Aztec Alchemists, Veritas Chemica`
   return (
     <div className="min-h-screen">
       {/* Hero Section with About.jpg background */}
-      <HeroImage title="Past Competitions" imageUrl="/about.jpg" />
+      <HeroImage title="Past Competitions" imageUrl="/past.jpg" />
 
       {/* Jury Section */}
       <div className="container mx-auto px-4">

@@ -12,7 +12,7 @@ export default function Venue() {
   return (
     <div className="min-h-screen">
       {/* Hero Section with About.jpg background */}
-      <HeroImage title="About the Venue" imageUrl="/about.jpg" />
+      <HeroImage title="About the Venue" imageUrl="/venue.jpg" />
 
       {/* Venue Section */}
       <div className="container mx-auto px-4">
