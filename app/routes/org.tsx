@@ -14,15 +14,12 @@ function PeopleList({
   imageUrls,
   names,
   roles = [],
-  cols = 3,
 }: {
   title: string;
   imageUrls: string[];
   names: string[];
   roles?: string[];
-  cols?: number;
 }) {
-  const colsClass = `md:grid-cols-${cols}`;
   const cards = names.map((name, index) => (
     <div key={index} className="w-40 text-blue-800 mb-4 flex flex-col items-center">
       <img src={imageUrls[index]} alt={name} className="w-40 h-40 object-cover rounded-full" />
@@ -36,7 +33,7 @@ function PeopleList({
           {title}
       </h2>
       <div
-        className={`container mx-auto px-4 text-center mb-16 grid grid-cols-1 ${colsClass} place-content-start justify-items-center min-h-40`}
+        className={`container mx-auto px-4 text-center mb-16 min-h-40 peoplelist-container`}
       >
         {cards}
       </div>
@@ -68,19 +65,16 @@ export default function OrganizingCommittee() {
         title="Chief Moderators"
         imageUrls={Array(4).fill("/kmla_logo_icon.png")}
         names={["Yeong-Hyun Chun", "Do-Hye Kim", "Jae-Hyun Won", "Song-Hyun Shin"]}
-        cols={4}
       />
       <PeopleList
         title="Media & Support"
         imageUrls={Array(6).fill("/kmla_logo_icon.png")}
         names={["Jeong-Uk Choi", "Seong-Bin Heo", "Jin-Woo Ahn", "Anon", "Anon", "Anon"]}
-        cols={3}
       />
       <PeopleList
         title="Volunteers"
         imageUrls={Array(22).fill("/kmla_logo_icon.png")}
         names={Array(22).fill("Anon")}
-        cols={4}
       />
     </div>
   );
