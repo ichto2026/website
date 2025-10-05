@@ -1,5 +1,5 @@
 import HeroImage from "~/components/HeroImage";
-import type { Route } from "./+types/about";
+import type { Route } from "./+types/sponsors";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -12,7 +12,7 @@ export default function Sponsors() {
   return (
     <div className="min-h-screen">
       {/* Hero Section with About.jpg background */}
-      <HeroImage title="Our Sponsors" imageUrl="/about.jpg" />
+      <HeroImage title="Sponsors" imageUrl="/about.jpg" />
 
       {/* Sponsors Section */}
       <div className="container mx-auto px-4 text-center">

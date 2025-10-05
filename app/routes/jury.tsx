@@ -1,9 +1,9 @@
 import HeroImage from "~/components/HeroImage";
-import type { Route } from "./+types/about";
+import type { Route } from "./+types/jury";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "Jury - IChTo 2026" },
+    { title: "Jury Members - IChTo 2026" },
     { name: "description", content: "Jury Members of International Chemistry Tournament 2026" },
   ];
 }
@@ -12,7 +12,7 @@ export default function Jury() {
   return (
     <div className="min-h-screen">
       {/* Hero Section with About.jpg background */}
-      <HeroImage title="Our Jury" imageUrl="/about.jpg" />
+      <HeroImage title="Jury Members" imageUrl="/about.jpg" />
 
       {/* Jury Section */}
       <div className="container mx-auto px-4 text-center my-32">

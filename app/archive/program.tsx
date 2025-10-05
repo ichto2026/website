@@ -1,11 +1,11 @@
-import type { Route } from "./+types/program";
+// import type { Route } from "./+types/program";
 
-export function meta({}: Route.MetaArgs) {
-  return [
-    { title: "Program - IChTo 2026" },
-    { name: "description", content: "Program schedule for International Chemistry Tournament 2026" },
-  ];
-}
+// export function meta({}: Route.MetaArgs) {
+//   return [
+//     { title: "Program - IChTo 2026" },
+//     { name: "description", content: "Program schedule for International Chemistry Tournament 2026" },
+//   ];
+// }
 
 export default function Program() {
   return (

@@ -1,5 +1,5 @@
 import HeroImage from "~/components/HeroImage";
-import type { Route } from "./+types/about";
+import type { Route } from "./+types/problems";
 import { Link } from "react-router";
 
 export function meta({}: Route.MetaArgs) {
@@ -13,7 +13,7 @@ export default function Problems() {
   return (
     <div className="min-h-screen">
       {/* Hero Section with About.jpg background */}
-      <HeroImage title="Our Problems" imageUrl="/about.jpg" />
+      <HeroImage title="Official Problems" imageUrl="/about.jpg" />
 
       {/* Problems Section */}
       <div className="container mx-auto px-4">

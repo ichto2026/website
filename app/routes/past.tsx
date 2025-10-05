@@ -1,6 +1,6 @@
 import HeroImage from "~/components/HeroImage";
 import TextNMap from "~/components/TextNMap";
-import type { Route } from "./+types/about";
+import type { Route } from "./+types/past";
 
 export function meta({}: Route.MetaArgs) {
   return [

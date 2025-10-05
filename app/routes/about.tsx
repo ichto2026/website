@@ -5,8 +5,8 @@ import ImageNText from "~/components/ImageNText";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "About - IChTo 2026" },
-    { name: "description", content: "About International Chemistry Tournament 2026" },
+    { title: "Introduction - IChTo 2026" },
+    { name: "description", content: "Introduction to International Chemistry Tournament 2026" },
   ];
 }
 

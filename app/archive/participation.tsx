@@ -1,11 +1,11 @@
-import type { Route } from "./+types/participation";
+// import type { Route } from "./+types/participation";
 
-export function meta({}: Route.MetaArgs) {
-  return [
-    { title: "Participation - IChTo 2026" },
-    { name: "description", content: "Participation information for International Chemistry Tournament 2026" },
-  ];
-}
+// export function meta({}: Route.MetaArgs) {
+//   return [
+//     { title: "Participation - IChTo 2026" },
+//     { name: "description", content: "Participation information for International Chemistry Tournament 2026" },
+//   ];
+// }
 
 export default function Participation() {
   return (

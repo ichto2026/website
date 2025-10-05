@@ -1,5 +1,5 @@
 import HeroImage from "~/components/HeroImage";
-import type { Route } from "./+types/about";
+import type { Route } from "./+types/results";
 import { Link } from "react-router";
 
 export function meta({}: Route.MetaArgs) {

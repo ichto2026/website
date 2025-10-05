@@ -1,11 +1,11 @@
 import HeroImage from "~/components/HeroImage";
 import ImageNText from "~/components/ImageNText";
-import type { Route } from "./+types/about";
+import type { Route } from "./+types/rules";
 import { useState } from "react";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "Rules - IChTo 2026" },
+    { title: "Rules and Format - IChTo 2026" },
     { name: "description", content: "Rules and Format of International Chemistry Tournament 2026" },
   ];
 }

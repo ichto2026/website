@@ -1,20 +1,20 @@
 import HeroImage from "~/components/HeroImage";
-import type { Route } from "./+types/about";
+import type { Route } from "./+types/accommodation";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "Jury - IChTo 2026" },
-    { name: "description", content: "Jury Members of International Chemistry Tournament 2026" },
+    { title: "Accommodation - IChTo 2026" },
+    { name: "description", content: "Accommodation for International Chemistry Tournament 2026" },
   ];
 }
 
-export default function Jury() {
+export default function Accommodation() {
   return (
     <div className="min-h-screen">
       {/* Hero Section with About.jpg background */}
-      <HeroImage title="Our Jury" imageUrl="/about.jpg" />
+      <HeroImage title="Accommodation" imageUrl="/about.jpg" />
 
-      {/* Jury Section */}
+      {/* Accommodation Section */}
       <div className="container mx-auto px-4 text-center">
         <div className="max-w-4xl mx-auto mb-16">
           <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">Accommodation</h2>
@@ -56,7 +56,7 @@ export default function Jury() {
                 referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
-            <p className="mt-4 text-gray-700" style={{ textAlign: "start" }}>
+            <p className="mt-8 text-gray-700" style={{ textAlign: "start" }}>
               Welli Hilli Park is a comprehensive four-season resort located near Seoul, situated in the pristine Suribong area of Hoengseong, Gangwon Province—a pollution-free natural zone. Here, you can enjoy elevated relaxation amid stunning natural surroundings that showcase distinct beauty in each season. The resort is surrounded by exceptional natural environments, including nearby Cheongtaesan Natural Recreation Forest, Forest Therapy Center, and Chiaksan National Park. Accommodation options include youth hostels in 3 different styles and condominiums in 16 different types.
             </p>
           </div>

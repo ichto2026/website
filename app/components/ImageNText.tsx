@@ -33,7 +33,7 @@ export default function ImageNText({
   lgMy?: number;
 }) {
   return (
-    <div className={`container mx-auto px-4 relative z-10 md:w-320 my-8 lg:my-${lgMy.toString()}`}>
+    <div className={`container mx-auto px-8 relative z-10 md:w-320 my-8 lg:my-${lgMy.toString()}`}>
       <div className={`flex space-x-12 flex-1 items-center whitespace-pre-wrap`}>
         {!reverse && imageUrl && imageAlt && (<ImageBox imageUrl={imageUrl} imageAlt={imageAlt} imageMaxHeight={imageMaxHeight} />)}
         <div className="flex-4">
