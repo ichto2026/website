@@ -14,7 +14,7 @@ function PeopleList({
   imageUrls,
   names,
   roles = [],
-  cols = 3
+  cols = 3,
 }: {
   title: string;
   imageUrls: string[];
@@ -22,6 +22,7 @@ function PeopleList({
   roles?: string[];
   cols?: number;
 }) {
+  const colsClass = `md:grid-cols-${cols}`;
   const cards = names.map((name, index) => (
     <div key={index} className="w-40 text-blue-800 mb-4 flex flex-col items-center">
       <img src={imageUrls[index]} alt={name} className="w-40 h-40 object-cover rounded-full" />
@@ -34,7 +35,9 @@ function PeopleList({
       <h2 className="text-3xl lg:text-5xl font-bold px-4 my-8 md:text-center text-blue-800">
           {title}
       </h2>
-      <div className={`container mx-auto px-4 text-center mb-16 grid grid-cols-1 md:grid-cols-${cols.toString()} place-content-start justify-items-center min-h-40`}>
+      <div
+        className={`container mx-auto px-4 text-center mb-16 grid grid-cols-1 ${colsClass} place-content-start justify-items-center min-h-40`}
+      >
         {cards}
       </div>
     </>
