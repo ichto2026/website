@@ -94,8 +94,7 @@ export default function Register() {
           </fetcher.Form>
         ) : (
           <p className="text-xl text-center text-gray-600 mb-8">
-            Registration will open soon. Please check back later for
-            registration details.
+            This is not the registration period.
           </p>
         )}
       </div>
