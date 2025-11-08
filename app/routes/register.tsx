@@ -1,24 +1,92 @@
+import HeroImage from "~/components/HeroImage";
 import type { Route } from "./+types/register";
+import { useFetcher, redirect } from "react-router";
+import { createClient } from "~/lib/supabase-server";
 
 export function meta({}: Route.MetaArgs) {
   return [
     { title: "Register - IChTo 2026" },
-    { name: "description", content: "Registration for International Chemistry Tournament 2026" },
+    {
+      name: "description",
+      content: "Registration for International Chemistry Tournament 2026",
+    },
   ];
 }
 
+export async function action({ request }: Route.ActionArgs) {
+  const { supabase } = createClient(request);
+  let formData = await request.formData();
+  let name = formData.get("name");
+  let instructor = formData.get("instructor");
+  let email = formData.get("email");
+  let country = formData.get("country");
+  let school = formData.get("school");
+  let numOfStudents = formData.get("numOfStudents");
+
+  const { error } = await supabase.from("registration").insert({
+    name: name,
+    instructor: instructor,
+    email: email,
+    country: country,
+    school: school,
+    numOfStudents: numOfStudents,
+  });
+  if (error) return { error: error.message };
+  return redirect("/problems?submitted");
+}
+
 export default function Register() {
+  const fetcher = useFetcher();
   return (
-    <div className="min-h-screen py-20">
-      <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-8 text-gray-900">
-            Register Now
-          </h1>
-          <p className="text-xl text-gray-600 mb-8">
-            Registration will open soon. Please check back later for registration details.
-          </p>
-        </div>
+    <div className="min-h-screen">
+      <HeroImage title="Register" imageUrl="/register_page.jpg" />
+      <div className="container mx-auto px-4 mb-16 text-md md:text-2xl">
+        <fetcher.Form
+          method="post"
+          className="max-w-4xl mx-auto text-left text-gray-600 flex flex-col space-y-4 md:space-y-10"
+        >
+          <p>Team Name</p>
+          <input name="name" type="text" className="input" required />
+          <p>Team Instructor</p>
+          <input
+            name="instructor"
+            type="text"
+            className="input"
+            placeholder="John Doe"
+            required
+          />
+          <p>Email Address</p>
+          <input
+            name="email"
+            type="email"
+            className="input"
+            placeholder="you@example.com"
+            required
+          />
+          <p>Country</p>
+          <input name="country" type="text" className="input" required />
+          <p>Affiliated school</p>
+          <input name="school" type="text" className="input" required />
+          <p>Number of Students</p>
+          <input
+            name="numOfStudents"
+            type="number"
+            min="4"
+            max="6"
+            className="input"
+            placeholder="4 to 6 Members (ex: 4)"
+            required
+          />
+          <button
+            type="submit"
+            className="bg-blue-800 text-white px-5 py-2 rounded-xl max-w-45 mt-8"
+          >
+            {fetcher.state === "idle" ? "Submit" : "Submitting..."}
+          </button>
+          {fetcher.data?.error && (
+            <p className="text-red">{fetcher.data?.error}</p>
+          )}
+        </fetcher.Form>
       </div>
     </div>
   );
