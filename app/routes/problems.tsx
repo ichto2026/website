@@ -23,7 +23,7 @@ export default function Problems() {
       <div className="container mx-auto px-4">
         {searchParams.has("submitted") && (
           <p className="px-4 py-4 mb-8 rounded-lg bg-red-400 text-white text-xl">
-            Successfully Submitted!
+            Successfully Registered!
           </p>
         )}
         <div className="text-gray-800">
