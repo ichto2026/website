@@ -37,56 +37,67 @@ export async function action({ request }: Route.ActionArgs) {
 
 export default function Register() {
   const fetcher = useFetcher();
+  const today = new Date().getTime();
+  const from = new Date("2025-11-09T00:00:00.000+09:00").getTime();
+  const to = new Date("2025-11-10T00:00:00.000+09:00").getTime();
+  console.log(today, from, to);
   return (
     <div className="min-h-screen">
       <HeroImage title="Register" imageUrl="/register_page.jpg" />
       <div className="container mx-auto px-4 mb-16 text-md md:text-2xl">
-        <fetcher.Form
-          method="post"
-          className="max-w-4xl mx-auto text-left text-gray-600 flex flex-col space-y-4 md:space-y-10"
-        >
-          <p>Team Name</p>
-          <input name="name" type="text" className="input" required />
-          <p>Team Instructor</p>
-          <input
-            name="instructor"
-            type="text"
-            className="input"
-            placeholder="John Doe"
-            required
-          />
-          <p>Email Address</p>
-          <input
-            name="email"
-            type="email"
-            className="input"
-            placeholder="you@example.com"
-            required
-          />
-          <p>Country</p>
-          <input name="country" type="text" className="input" required />
-          <p>Affiliated school</p>
-          <input name="school" type="text" className="input" required />
-          <p>Number of Students</p>
-          <input
-            name="numOfStudents"
-            type="number"
-            min="4"
-            max="6"
-            className="input"
-            placeholder="4 to 6 Members (ex: 4)"
-            required
-          />
-          <button
-            type="submit"
-            className="bg-blue-800 text-white px-5 py-2 rounded-xl max-w-45 mt-8"
+        {today >= from && today <= to ? (
+          <fetcher.Form
+            method="post"
+            className="max-w-4xl mx-auto text-left text-gray-600 flex flex-col space-y-4 md:space-y-10"
           >
-            {fetcher.state === "idle" ? "Submit" : "Submitting..."}
-          </button>
-          {fetcher.data?.error && (
-            <p className="text-red">{fetcher.data?.error}</p>
-          )}
-        </fetcher.Form>
+            <p>Team Name</p>
+            <input name="name" type="text" className="input" required />
+            <p>Team Instructor</p>
+            <input
+              name="instructor"
+              type="text"
+              className="input"
+              placeholder="John Doe"
+              required
+            />
+            <p>Email Address</p>
+            <input
+              name="email"
+              type="email"
+              className="input"
+              placeholder="you@example.com"
+              required
+            />
+            <p>Country</p>
+            <input name="country" type="text" className="input" required />
+            <p>Affiliated school</p>
+            <input name="school" type="text" className="input" required />
+            <p>Number of Students</p>
+            <input
+              name="numOfStudents"
+              type="number"
+              min="4"
+              max="6"
+              className="input"
+              placeholder="4 to 6 Members (ex: 4)"
+              required
+            />
+            <button
+              type="submit"
+              className="bg-blue-800 text-white px-5 py-2 rounded-xl max-w-45 mt-8"
+            >
+              {fetcher.state === "idle" ? "Submit" : "Submitting..."}
+            </button>
+            {fetcher.data?.error && (
+              <p className="text-red">{fetcher.data?.error}</p>
+            )}
+          </fetcher.Form>
+        ) : (
+          <p className="text-xl text-center text-gray-600 mb-8">
+            Registration will open soon. Please check back later for
+            registration details.
+          </p>
+        )}
       </div>
     </div>
   );
