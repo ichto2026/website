@@ -18,7 +18,8 @@ export async function action({ request }: Route.ActionArgs) {
   let formData = await request.formData();
   let name = formData.get("name");
   let instructor = formData.get("instructor");
-  let email = formData.get("email");
+  let emailPrimary = formData.get("emailPrimary");
+  let emailSecondary = formData.get("emailSecondary");
   let country = formData.get("country");
   let school = formData.get("school");
   let numOfStudents = formData.get("numOfStudents");
@@ -26,7 +27,8 @@ export async function action({ request }: Route.ActionArgs) {
   const { error } = await supabase.from("registration").insert({
     name: name,
     instructor: instructor,
-    email: email,
+    email: emailPrimary,
+    email_secondary: emailSecondary,
     country: country,
     school: school,
     numOfStudents: numOfStudents,
@@ -60,12 +62,27 @@ export default function Register() {
               placeholder="John Doe"
               required
             />
-            <p>Email Address</p>
+            <div>
+              <p>Email Address (primary)</p>
+              <p className="text-lg text-gray-500 mt-4">
+                We will request your students' information, participation fee
+                deposit details, and other relevant information via email around
+                March 2026.
+              </p>
+            </div>
             <input
-              name="email"
+              name="emailPrimary"
               type="email"
               className="input"
               placeholder="you@example.com"
+              required
+            />
+            <p>Email Address (secondary)</p>
+            <input
+              name="emailSecondary"
+              type="email"
+              className="input"
+              placeholder="you@example2.com"
               required
             />
             <p>Country</p>
