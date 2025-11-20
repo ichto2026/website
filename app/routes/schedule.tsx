@@ -4,7 +4,10 @@ import type { Route } from "./+types/schedule";
 export function meta({}: Route.MetaArgs) {
   return [
     { title: "Schedule - IChTo 2026" },
-    { name: "description", content: "Schedule of International Chemistry Tournament 2026" },
+    {
+      name: "description",
+      content: "Schedule of International Chemistry Tournament 2026",
+    },
   ];
 }
 
@@ -13,8 +16,8 @@ export default function Schedule() {
     <div className="min-h-screen">
       {/* Hero Section with About.jpg background */}
       <HeroImage title="Schedule" imageUrl="/schedule.jpg" />
-
       {/* Schedule Section */}
+      {/*
       <div className="container mx-auto px-4 text-center overflow-auto">
         <div className="max-w-4xl mx-auto mb-16">
           <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">Schedule</h2>
@@ -79,7 +82,11 @@ export default function Schedule() {
             </div>
           </div>
         </div>
+      </div>*/}
+      <div className="container mx-auto px-4 text-center my-32">
+        Schedule will be posted when finalized
       </div>
     </div>
   );
 }
+

@@ -25,7 +25,7 @@ export function Header() {
       { name: "Results", href: "/results" },
       { name: "Schedule", href: "/schedule" },
       { name: "Cultural Moments", href: "/cultural" },
-      { name: "Accommodation", href: "/accommodation" },
+      // { name: "Accommodation", href: "/accommodation" },
       { name: "Useful Information", href: "/info" },
     ],
     partners: [{ name: "Sponsors", href: "/sponsors" }],
@@ -367,4 +367,3 @@ export function Header() {
     </>
   );
 }
-
