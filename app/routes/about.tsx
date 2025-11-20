@@ -1,11 +1,6 @@
 import HeroImage from "~/components/HeroImage";
 import type { Route } from "./+types/about";
-import {
-  Users,
-  Flag,
-  MessageCircleQuestionMark,
-  Languages,
-} from "lucide-react";
+import { Users, Flag, BookCheck, Globe } from "lucide-react";
 import ImageNText from "~/components/ImageNText";
 
 export function meta({}: Route.MetaArgs) {
@@ -20,7 +15,7 @@ export function meta({}: Route.MetaArgs) {
 
 export default function About() {
   const descAbout =
-    "is a team competition for high school students, with a format based on scientific debates starting from problems with open solutions. Having a novel approach in education, as compared to classical Olympiads, the accent is on both scientific and soft skills. As a result, creativity, teamwork, critical thinking, and public speaking are very important to succeed in this contest.";
+    "International Chemistry Tournament (IChTo) is a team-based chemistry competition for high school students. Unlike traditional Olympiad-style contests, IChTo challenges participants with open-ended problems that have no predetermined answer. Through presenting and debating different solutions, students develop creativity, teamwork, critical thinking and public speaking skills.";
   return (
     <div className="min-h-screen">
       {/* Hero Section with About.jpg background */}
@@ -40,7 +35,7 @@ export default function About() {
           <h3 className="text-2xl font-bold text-gray-900 mb-2">5 Rounds</h3>
         </div>
         <div className="flex flex-col items-center">
-          <MessageCircleQuestionMark className="w-12 h-12 text-blue-800 mb-4" />
+          <BookCheck className="w-12 h-12 text-blue-800 mb-4" />
           <h3 className="text-2xl font-bold text-gray-900 mb-2">
             12 Questions
           </h3>
@@ -53,7 +48,7 @@ export default function About() {
           <p className="text-gray-600">Gathered in a week</p>
         </div>
         <div className="flex flex-col items-center">
-          <Languages className="w-12 h-12 text-blue-800 mb-4" />
+          <Globe className="w-12 h-12 text-blue-800 mb-4" />
           <h3 className="text-2xl font-bold text-gray-900 mb-2">
             10 Countries
           </h3>

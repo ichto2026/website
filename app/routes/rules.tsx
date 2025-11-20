@@ -52,7 +52,7 @@ After the mentioned introduction, the Opponent-Team must challenge the Reporter-
 If a problem has been selected, the Reporter Team and the Opponent Team announce the name of the speakers.
 
 REPORT 
-After the preparation time, the Reporter presents the Report. The presentation is strictly monologue and no one except the reporter can intervene. 
+After the preparation time, the Reporter presents the Report. The presentation is strictly monologue and no one except the reporter can intervene. The reporter presents its original solution to the problem. 
 
 OPPOSE 
 After the presentation of the Report, the Opponent gets preparation time before opposing the reporter’s solution. The opponent must be relevant, clear and precise This speech is also strictly monologue. No one except the opponent can intervene.

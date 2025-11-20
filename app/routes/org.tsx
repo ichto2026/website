@@ -70,7 +70,7 @@ export default function OrganizingCommittee() {
       <PeopleList
         title="IChTo 2026 Steering Committee"
         imageUrls={Array(3).fill("/kmla_logo_icon.png")}
-        names={["Won-Hyeong Jang", "Jae-Hyun Won", "Dy-Hye Kim"]}
+        names={["Wonhyeong Jang", "Jaehyun Won", "Dohui Kim"]}
         roles={[
           "KMLA Chemistry Teacher",
           "IChTo-2025 Gold Medalist",
@@ -80,31 +80,25 @@ export default function OrganizingCommittee() {
       <PeopleList
         title="Chief Moderators"
         imageUrls={Array(4).fill("/kmla_logo_icon.png")}
-        names={[
-          "Yeong-Hyun Chun",
-          "Do-Hye Kim",
-          "Jae-Hyun Won",
-          "Song-Hyun Shin",
+        names={["Jaehyun Won", "Dohui Kim", "Songyeon Shin", "Allison Chun"]}
+        roles={[
+          "IChTo-2025 Gold Medalist",
+          "IChTo-2025 Gold Medalist",
+          "IChTo-2025 Gold Medalist",
+          "IChTo-2025 Gold Medalist",
         ]}
       />
       <PeopleList
         title="Media & Support"
         imageUrls={Array(6).fill("/kmla_logo_icon.png")}
-        names={[
-          "Jeong-Uk Choi",
-          "Seong-Bin Heo",
-          "Jin-Woo Ahn",
-          "Anon",
-          "Anon",
-          "Anon",
-        ]}
+        names={["Jeonguk Choi", "Seungbeen Hur", "Jinwoo An", "Sungyeol Choi"]}
+        roles={["Technology Head", "OutReach Head", "Contents Head", "Advisor"]}
       />
       <PeopleList
         title="Volunteers"
-        imageUrls={Array(22).fill("/kmla_logo_icon.png")}
-        names={Array(22).fill("Anon")}
+        imageUrls={Array(1).fill("/kmla_logo_icon.png")}
+        names={Array(1).fill("TBA")}
       />
     </div>
   );
 }
-
