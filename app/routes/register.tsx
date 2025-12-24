@@ -40,14 +40,14 @@ export async function action({ request }: Route.ActionArgs) {
 export default function Register() {
   const fetcher = useFetcher();
   const today = new Date().getTime();
-  const from = new Date("2025-11-09T00:00:00.000+09:00").getTime();
-  const to = new Date("2025-11-10T00:00:00.000+09:00").getTime();
-  console.log(today, from, to);
+  const from = new Date("2026-01-01T00:00:00.000+09:00").getTime();
+  const to = new Date("2026-03-28T00:00:00.000+09:00").getTime();
+  // console.log(today, from, to);
   return (
     <div className="min-h-screen">
       <HeroImage title="Register" imageUrl="/register_page.jpg" />
       <div className="container mx-auto px-4 mb-16 text-md md:text-2xl">
-        {today >= from && today <= to ? (
+        {today >= from && today < to ? (
           <fetcher.Form
             method="post"
             className="max-w-4xl mx-auto text-left text-gray-600 flex flex-col space-y-4 md:space-y-10"
