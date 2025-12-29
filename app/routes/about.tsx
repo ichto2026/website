@@ -25,7 +25,7 @@ export default function About() {
       <ImageNText
         title="IChTo 2026"
         description={descAbout}
-        imageUrl="/ICT-color-1.png"
+        imageUrl="https://placehold.co/300"
         imageAlt="IChTo 2026 Logo"
       />
 
@@ -62,7 +62,7 @@ export default function About() {
           <ImageNText
             title="Real-World Research"
             description="International Chemistry Tournament (IChTo) mimics real-world scientific research and the process of presenting and defending the results obtained. Participants have almost a year to work on 12 open-ended inquiry problems. The beauty of the Tournament is that teams can take quite different routes to tackle the same problem. All questions do not have a particular answer. As long as they stay within the broadly defined statement of the problem, all routes are legitimate and teams will be judged according to the depths reached by their investigations."
-            imageUrl="/ICT-color-1.png"
+            imageUrl="https://placehold.co/300"
             imageAlt="IChTo 2026 Logo"
             reverse={true}
           />
@@ -71,7 +71,7 @@ export default function About() {
           <ImageNText
             title="Scientific Debate"
             description="The competition is not a pen-and-paper exam but an enactment of a scientific discussion where participants take the roles of Reporter, Opponent and Reviewer and are evaluated by professional qualified jury members. The experience fosters interdisciplinary communication, encourages constructive feedback among peers, and cultivates professional presentation abilities. Ultimately, these opportunities prepare participants to excel in future academic or research endeavors."
-            imageUrl="/ICT-color-1.png"
+            imageUrl="https://placehold.co/300"
             imageAlt="IChTo 2026 Logo"
           />
         </div>
@@ -84,7 +84,7 @@ export default function About() {
       <ImageNText
         title="Dr. Ha-Shik Park"
         subtitle="Headmaster of Korean Minjok Leadership Academy"
-        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi iusto quam autem aperiam debitis facere dignissimos aspernatur sequi quia dolores, qui ducimus necessitatibus vel excepturi itaque exercitationem voluptate, at nesciunt."
+        description="TBA"
         imageUrl="/headmaster.jpg"
         imageAlt="Photo of Headmaster Ha-Shik Park"
         imageMaxHeight={400}

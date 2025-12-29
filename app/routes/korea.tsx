@@ -71,24 +71,24 @@ export default function Korea() {
         <h1 className="text-5xl font-bold mb-8">Heongsung</h1>
         <div className="max-w-full flex">
           <img
-            src="/seoul.jpg"
+            src="https://placehold.co/400"
             alt="Seoul"
             className="max-w-[50%] object-contain"
           />
           <img
-            src="/seoul.jpg"
+            src="https://placehold.co/400"
             alt="Seoul"
             className="max-w-[50%] object-contain"
           />
         </div>
         <div className="max-w-full flex">
           <img
-            src="/seoul.jpg"
+            src="https://placehold.co/400"
             alt="Seoul"
             className="max-w-[50%] mb-8 object-contain"
           />
           <img
-            src="/seoul.jpg"
+            src="https://placehold.co/400"
             alt="Seoul"
             className="max-w-[50%] mb-8 object-contain"
           />
@@ -109,4 +109,3 @@ export default function Korea() {
     </div>
   );
 }
-

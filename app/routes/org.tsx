@@ -69,7 +69,7 @@ export default function OrganizingCommittee() {
       />
       <PeopleList
         title="IChTo 2026 Steering Committee"
-        imageUrls={Array(3).fill("/kmla_logo_icon.png")}
+        imageUrls={Array(3).fill("https://placehold.co/400")}
         names={["Wonhyeong Jang", "Jaehyun Won", "Dohui Kim"]}
         roles={[
           "KMLA Chemistry Teacher",
@@ -79,7 +79,7 @@ export default function OrganizingCommittee() {
       />
       <PeopleList
         title="Chief Moderators"
-        imageUrls={Array(4).fill("/kmla_logo_icon.png")}
+        imageUrls={Array(4).fill("https://placehold.co/400")}
         names={["Jaehyun Won", "Dohui Kim", "Songyeon Shin", "Allison Chun"]}
         roles={[
           "IChTo-2025 Gold Medalist",
@@ -90,13 +90,13 @@ export default function OrganizingCommittee() {
       />
       <PeopleList
         title="Media & Support"
-        imageUrls={Array(6).fill("/kmla_logo_icon.png")}
+        imageUrls={Array(6).fill("https://placehold.co/400")}
         names={["Jeonguk Choi", "Seungbeen Hur", "Jinwoo An", "Sungyeol Choi"]}
         roles={["Technology Head", "OutReach Head", "Contents Head", "Advisor"]}
       />
       <PeopleList
         title="Volunteers"
-        imageUrls={Array(1).fill("/kmla_logo_icon.png")}
+        imageUrls={Array(1).fill("https://placehold.co/400")}
         names={Array(1).fill("TBA")}
       />
     </div>
