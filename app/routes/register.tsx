@@ -47,6 +47,9 @@ export default function Register() {
     <div className="min-h-screen">
       <HeroImage title="Register" imageUrl="/register_page.jpg" />
       <div className="container mx-auto px-4 mb-16 text-md md:text-2xl">
+        <p className="text-xl text-center text-gray-600 mb-8">
+          Registration: Jan 1st 2026 00:00 AM - Mar 27th 2026 11:59 PM (KST)
+        </p>
         {today >= from && today < to ? (
           <fetcher.Form
             method="post"
