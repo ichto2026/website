@@ -84,6 +84,7 @@ export default function Schedule() {
         </div>
       </div>*/}
       <div className="container mx-auto px-4 text-center my-32">
+        Registration: Jan 1st 2026 00:00 AM - Mar 27th 2026 11:59 PM (KST)<br />
         Schedule will be posted when finalized
       </div>
     </div>
