@@ -24,7 +24,7 @@ function Btn({
 }) {
   return (
     <button
-      className={`min-h-12 min-w-12 px-5 py-2 rounded-2xl transition-colors font-medium text-lg ${selected ? "bg-blue-800 text-white" : "bg-gray-100 text-gray-800 hover:bg-blue-100"}`}
+      className={`h-12 min-w-12 px-5 py-2 rounded-2xl transition-colors font-medium text-md lg:text-lg ${selected ? "bg-blue-800 text-white" : "bg-gray-100 text-gray-800 hover:bg-blue-100"}`}
       onClick={onClick}
     >
       {children}
@@ -101,7 +101,7 @@ The Reviewer’s statement should identify where the Reporter’s work was stron
       <HeroImage title="Rules and Format" imageUrl="/rules.jpg" />
 
       {/* Rules Section */}
-      <div className="container mx-auto px-4 text-center my-16 flex justify-around items-center">
+      <div className="container mx-auto px-4 lg:px-20 text-center my-16 flex justify-around items-center">
         <Btn
           selected={selected === "General Rules"}
           onClick={() => {
@@ -171,8 +171,20 @@ The Reviewer’s statement should identify where the Reporter’s work was stron
         }
         imageAlt={selected}
         reverse={true}
-        imageMaxHeight={400}
       />
+      <h2 className="text-2xl sm:text-3xl text-center text-gray-600 px-8 sm:px-16 sm:mb-8">
+        Example Videos
+      </h2>
+      <div className="min-h-[600px] px-4 sm:px-20 mb-12 w-full flex flex-col lg:flex-row justify-around space-y-8">
+        <iframe
+          src="https://drive.google.com/file/d/1tdqWNpXyhw0jY5OkFg2Bxw6ubjYqrIlS/preview"
+          className="w-full h-[240px] lg:w-[600px] md:h-[420px]"
+        ></iframe>
+        <iframe
+          src="https://drive.google.com/file/d/1cH51_nOOAfborAeicx6ljNWySmxMzdVP/preview"
+          className="w-full h-[240px] lg:w-[600px] md:h-[420px]"
+        ></iframe>
+      </div>
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import HeroImage from "~/components/HeroImage";
 import type { Route } from "./+types/schedule";
+import ScheduleTable from "~/components/ScheduleTable";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -83,11 +84,11 @@ export default function Schedule() {
           </div>
         </div>
       </div>*/}
-      <div className="container mx-auto px-4 text-center my-32">
-        Registration: Jan 1st 2026 00:00 AM - Mar 27th 2026 11:59 PM (KST)<br />
-        Schedule will be posted when finalized
+      <div className="container mx-auto px-4 text-center my-8">
+        Registration: Jan 1st 2026 00:00 AM - Mar 27th 2026 11:59 PM (KST)
       </div>
+      <ScheduleTable />
+      <div className="my-24"></div>
     </div>
   );
 }
-

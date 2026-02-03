@@ -1,13 +1,18 @@
-function ImageBox({ imageUrl, imageAlt, imageMaxHeight }: { imageUrl: string; imageAlt: string; imageMaxHeight: number }) {
+function ImageBox({
+  imageUrl,
+  imageAlt,
+  reverse,
+}: {
+  imageUrl: string;
+  imageAlt: string;
+  reverse: boolean;
+}) {
   return (
-    <div className="text-center flex-3 hidden md:block">
-      <img 
-        src={imageUrl}
-        alt={imageAlt}
-        className="max-w-full h-auto mx-auto"
-        style={{ maxHeight: imageMaxHeight }}
-      />
-    </div>
+    <img
+      src={imageUrl}
+      alt={imageAlt}
+      className={`mb-16 ${!reverse ? "mr-12 float-left" : "ml-12 float-right"} rounded-md hidden md:block w-48 lg:w-96`}
+    />
   );
 }
 
@@ -19,7 +24,6 @@ export default function ImageNText({
   imageAlt,
   reverse = false,
   revTextColor = false,
-  imageMaxHeight = 300,
   lgMy = 36,
 }: {
   title: string;
@@ -29,28 +33,32 @@ export default function ImageNText({
   imageAlt?: string;
   reverse?: boolean;
   revTextColor?: boolean;
-  imageMaxHeight?: number;
   lgMy?: number;
 }) {
   return (
-    <div className={`container mx-auto px-8 relative z-10 md:w-320 my-8 lg:my-${lgMy.toString()}`}>
-      <div className={`flex space-x-12 flex-1 items-center whitespace-pre-wrap`}>
-        {!reverse && imageUrl && imageAlt && (<ImageBox imageUrl={imageUrl} imageAlt={imageAlt} imageMaxHeight={imageMaxHeight} />)}
-        <div className="flex-4">
-          <h2 className={`text-2xl md:text-3xl lg:text-4xl font-bold mb-4 ${!subtitle ? "md:mb-14" : "md:mb-4"} ${revTextColor ? "text-gray-200" : "text-gray-900"}`}>
-            {title}
-          </h2>
-          {subtitle && (
-            <h3 className={`text-lg md:text-xl font-semibold mb-4 md:mb-10 ${revTextColor ? "text-gray-200" : "text-gray-800"}`}>
-              {subtitle}
-            </h3>
-          )}
-          <p className={`text-base md:text-lg leading-relaxed mb-6 md:mb-10 ${revTextColor ? "text-gray-300" : "text-gray-700"}`}>
-            {description}
-          </p>
-        </div>
-        {reverse && imageUrl && imageAlt && (<ImageBox imageUrl={imageUrl} imageAlt={imageAlt} imageMaxHeight={imageMaxHeight} />)}
-      </div>
+    <div
+      className={`container mx-auto px-8 lg:px-24 relative z-10 md:w-320 my-8 lg:my-${lgMy.toString()}`}
+    >
+      <ImageBox imageUrl={imageUrl!} imageAlt={imageAlt!} reverse={reverse} />
+
+      <h2
+        className={`text-2xl md:text-3xl lg:text-4xl font-bold mb-4 ${!subtitle ? "md:mb-14" : "md:mb-4"} ${revTextColor ? "text-gray-200" : "text-gray-900"}`}
+      >
+        {title}
+      </h2>
+      {subtitle && (
+        <h3
+          className={`text-lg md:text-xl font-semibold mb-4 md:mb-10 ${revTextColor ? "text-gray-200" : "text-gray-800"}`}
+        >
+          {subtitle}
+        </h3>
+      )}
+      <p
+        className={`whitespace-pre-wrap text-base md:text-lg leading-relaxed mb-6 md:mb-10 ${revTextColor ? "text-gray-300" : "text-gray-700"}`}
+      >
+        {description}
+      </p>
     </div>
   );
 }
+
