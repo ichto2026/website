@@ -13,7 +13,7 @@ export function Header() {
       { name: "Introducing IChTo", href: "/about" },
       { name: "Rules and Format", href: "/rules" },
       { name: "Organizing Committee", href: "/org" },
-      { name: "Jury Members", href: "/jury" },
+      // { name: "Jury Members", href: "/jury" }, //TBA
       { name: "Past Competitions", href: "/past" },
     ],
     participation: [
@@ -26,7 +26,7 @@ export function Header() {
       { name: "Schedule", href: "/schedule" },
       { name: "Cultural Moments", href: "/cultural" },
       // { name: "Accommodation", href: "/accommodation" },
-      { name: "Useful Information", href: "/info" },
+      // { name: "Useful Information", href: "/info" }, //TBA
     ],
     partners: [{ name: "Sponsors", href: "/sponsors" }],
   };
