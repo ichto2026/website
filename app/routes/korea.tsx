@@ -20,11 +20,15 @@ export default function Korea() {
       {/* Korea Section */}
       <div className="container max-w-4xl mx-auto px-4 mb-16">
         <h1 className="text-5xl font-bold mb-8">Republic of Korea</h1>
-        <img
-          src="/korea.jpg"
-          alt="Korea"
-          className="max-w-full mb-8 rounded-lg object-contain"
-        />
+        <picture>
+          <source srcSet="/avif/korea.avif" type="image/avif" />
+          <img
+            src="/korea.jpg"
+            alt="Korea"
+            className="max-w-full mb-8 rounded-lg object-contain"
+            loading="lazy"
+          />
+        </picture>
         <div className="text-gray-700">
           <p>
             South Korea, located on the southern part of the Korean Peninsula,
@@ -44,11 +48,15 @@ export default function Korea() {
       {/* Seoul Section */}
       <div className="container max-w-4xl mx-auto px-4 mb-16">
         <h1 className="text-5xl font-bold mb-8">Seoul</h1>
-        <img
-          src="/seoul.jpg"
-          alt="Seoul"
-          className="max-w-full mb-8 rounded-lg object-contain"
-        />
+        <picture>
+          <source srcSet="/avif/seoul.avif" type="image/avif" />
+          <img
+            src="/seoul.jpg"
+            alt="Seoul"
+            className="max-w-full mb-8 rounded-lg object-contain"
+            loading="lazy"
+          />
+        </picture>
         <div className="text-gray-700">
           <p>
             Seoul, the capital and largest city of South Korea, is a vibrant
@@ -66,33 +74,19 @@ export default function Korea() {
         </div>
       </div>
 
-      {/* Heongsung Section */}
+      {/* Heongseong Section */}
       <div className="container max-w-4xl mx-auto px-4 mb-16">
         <h1 className="text-5xl font-bold mb-8">Heongsung</h1>
-        <div className="max-w-full flex">
+        <picture>
+          <source srcSet="/avif/heongseong.avif" type="image/avif" />
           <img
-            src="https://placehold.co/400"
-            alt="Seoul"
-            className="max-w-[50%] object-contain"
+            src="/heongseong.jpg"
+            alt="Heongseong"
+            title="민족사관 고등학교 / Snowfalcon cu / CC BY 3.0 / https://commons.wikimedia.org/wiki/File:Minjoksagwan.JPG"
+            className="max-w-full mb-8 rounded-lg object-contain"
+            loading="lazy"
           />
-          <img
-            src="https://placehold.co/400"
-            alt="Seoul"
-            className="max-w-[50%] object-contain"
-          />
-        </div>
-        <div className="max-w-full flex">
-          <img
-            src="https://placehold.co/400"
-            alt="Seoul"
-            className="max-w-[50%] mb-8 object-contain"
-          />
-          <img
-            src="https://placehold.co/400"
-            alt="Seoul"
-            className="max-w-[50%] mb-8 object-contain"
-          />
-        </div>
+        </picture>
         <div className="text-gray-700">
           <p>
             Hoengseong, located in Gangwon Province in the northeastern part of
