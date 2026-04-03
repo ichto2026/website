@@ -25,11 +25,14 @@ export default function Venue() {
           </h2>
           <div className="p-8">
             <div className="flex flex-col md:flex-row items-center md:justify-around mb-8 space-y-4 md:space-y-0">
-              <img
-                src="/kmla_logo.png"
-                alt="Korean Minjok Leadership Academy Logo"
-                className="h-16"
-              />
+              <picture>
+                <source srcSet="/avif/kmla_logo.avif" type="image/avif" />
+                <img
+                  src="/kmla_logo.png"
+                  alt="Korean Minjok Leadership Academy Logo"
+                  className="h-16"
+                />
+              </picture>
               <h3 className="text-2xl font-bold text-gray-900 text-center">
                 민족사관고등학교
                 <br />
@@ -39,11 +42,17 @@ export default function Venue() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
-                <img
-                  src="kmlaphotos/kmla_photo.jpg"
-                  alt="Korean Minjok Leadership Academy Photo"
-                  className="w-full h-64 object-cover rounded-lg"
-                />
+                <picture>
+                  <source
+                    srcSet="/kmlaphotos/kmla_photo.avif"
+                    type="image/avif"
+                  />
+                  <img
+                    src="kmlaphotos/kmla_photo.jpg"
+                    alt="Korean Minjok Leadership Academy Photo"
+                    className="w-full h-64 object-cover rounded-lg"
+                  />
+                </picture>
               </div>
               <div className="h-64 rounded-lg overflow-hidden">
                 <iframe
@@ -57,32 +66,46 @@ export default function Venue() {
                 ></iframe>
               </div>
               <div>
-                <img
-                  src="/kmlaphotos/dasan.jpg"
-                  alt="Korean Minjok Leadership Academy Photo"
-                  className="w-full h-64 object-cover rounded-lg"
-                />
+                <picture>
+                  <source srcSet="/kmlaphotos/dasan.avif" type="image/avif" />
+                  <img
+                    src="/kmlaphotos/dasan.jpg"
+                    alt="Korean Minjok Leadership Academy Photo"
+                    className="w-full h-64 object-cover rounded-lg"
+                  />
+                </picture>
               </div>
               <div>
-                <img
-                  src="/kmlaphotos/chungmu.png"
-                  alt="Korean Minjok Leadership Academy Photo"
-                  className="w-full h-64 object-cover rounded-lg"
-                />
+                <picture>
+                  <source srcSet="/kmlaphotos/chungmu.avif" type="image/avif" />
+                  <img
+                    src="/kmlaphotos/chungmu.png"
+                    alt="Korean Minjok Leadership Academy Photo"
+                    className="w-full h-64 object-cover rounded-lg"
+                  />
+                </picture>
               </div>
               <div>
-                <img
-                  src="/kmlaphotos/minkyo.png"
-                  alt="Korean Minjok Leadership Academy Photo"
-                  className="w-full h-64 object-cover rounded-lg"
-                />
+                <picture>
+                  <source srcSet="/kmlaphotos/minkyo.avif" type="image/avif" />
+
+                  <img
+                    src="/kmlaphotos/minkyo.png"
+                    alt="Korean Minjok Leadership Academy Photo"
+                    className="w-full h-64 object-cover rounded-lg"
+                  />
+                </picture>
               </div>
               <div>
-                <img
-                  src="/kmlaphotos/kmlamap.png"
-                  alt="Korean Minjok Leadership Academy Photo"
-                  className="w-full h-64 object-cover rounded-lg"
-                />
+                <picture>
+                  <source srcSet="/kmlaphotos/jungja.avif" type="image/avif" />
+
+                  <img
+                    src="/kmlaphotos/jungja.jpg"
+                    alt="Korean Minjok Leadership Academy Photo"
+                    className="w-full h-64 object-cover rounded-lg"
+                  />
+                </picture>
               </div>
             </div>
           </div>
@@ -139,4 +162,3 @@ export default function Venue() {
     </div>
   );
 }
-

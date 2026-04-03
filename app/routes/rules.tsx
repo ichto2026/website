@@ -177,11 +177,11 @@ The Reviewer’s statement should identify where the Reporter’s work was stron
       </h2>
       <div className="min-h-[600px] px-4 sm:px-20 mb-12 w-full flex flex-col lg:flex-row justify-around space-y-8">
         <iframe
-          src="https://drive.google.com/file/d/1tdqWNpXyhw0jY5OkFg2Bxw6ubjYqrIlS/preview"
+          src="https://drive.google.com/file/d/1cH51_nOOAfborAeicx6ljNWySmxMzdVP/preview"
           className="w-full h-[240px] lg:w-[600px] md:h-[420px]"
         ></iframe>
         <iframe
-          src="https://drive.google.com/file/d/1cH51_nOOAfborAeicx6ljNWySmxMzdVP/preview"
+          src="https://drive.google.com/file/d/1tdqWNpXyhw0jY5OkFg2Bxw6ubjYqrIlS/preview"
           className="w-full h-[240px] lg:w-[600px] md:h-[420px]"
         ></iframe>
       </div>
