@@ -70,11 +70,14 @@ export function Header() {
             {/* Left side - Logo */}
             <Link to="/">
               <div className="bg-white rounded-3xl px-3 py-3 border border-gray-200 shadow-lg">
-                <img
-                  src="/ichtologo.png"
-                  alt="IChTo Logo"
-                  className="h-11 w-11"
-                />
+                <picture>
+                  <source srcSet="/avif/ichtologo.avif" type="image/avif" />
+                  <img
+                    src="/ichtologo.png"
+                    alt="IChTo Logo"
+                    className="h-11 w-11"
+                  />
+                </picture>
               </div>
             </Link>
 

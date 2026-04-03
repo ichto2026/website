@@ -65,7 +65,13 @@ We warmly invite you to join us at IChTo 2026 — a place where chemistry, ideas
         </div>
       </div>
 
-      <div className="bg-[url('/minsa.jpg')] my-16 overflow-auto">
+      <div
+        className="my-16 overflow-auto"
+        style={{
+          backgroundImage:
+            "image-set(url('/avif/minsa.avif') type('image/avif'), url('/minsa.jpg') type('image/jpeg'))",
+        }}
+      >
         <div className="bg-white/50 backdrop-blur-sm overflow-auto">
           {/* Scientific Debate Section */}
           <ImageNText

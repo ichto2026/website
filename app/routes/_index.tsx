@@ -18,14 +18,16 @@ export default function Home() {
       <section
         className="hero-section min-h-screen flex items-center justify-start relative bg-cover bg-center bg-no-repeat overflow-hidden"
         style={{
-          backgroundImage: "url('/landing.jpg')",
+          backgroundImage:
+            "image-set(url('/avif/landing.avif') type('image/avif'), url('/landing.jpg') type('image/jpeg'))",
           filter: "blur(0px)",
         }}
       >
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: "url('/landing.jpg')",
+            backgroundImage:
+              "image-set(url('/avif/landing.avif') type('image/avif'), url('/landing.jpg') type('image/jpeg'))",
             filter: "blur(4px)",
             transform: "scale(1.1)",
             maskImage:

@@ -7,13 +7,30 @@ function ImageBox({
   imageAlt: string;
   reverse: boolean;
 }) {
-  return (
-    <img
-      src={imageUrl}
-      alt={imageAlt}
-      className={`mb-16 ${!reverse ? "mr-12 float-left" : "ml-12 float-right"} rounded-md hidden md:block w-48 lg:w-96`}
-    />
-  );
+  if (!imageUrl.startsWith("http")) {
+    const imageAvifUrl =
+      imageUrl.replace("/", "/avif/").split(".")[0] + ".avif";
+    return (
+      <picture>
+        <source srcSet={imageAvifUrl} type="image/avif" />
+        <img
+          src={imageUrl}
+          alt={imageAlt}
+          className={`mb-16 ${!reverse ? "mr-12 float-left" : "ml-12 float-right"} rounded-md hidden md:block w-48 lg:w-96`}
+          loading="lazy"
+        />
+      </picture>
+    );
+  } else {
+    return (
+      <img
+        src={imageUrl}
+        alt={imageAlt}
+        className={`mb-16 ${!reverse ? "mr-12 float-left" : "ml-12 float-right"} rounded-md hidden md:block w-48 lg:w-96`}
+        loading="lazy"
+      />
+    );
+  }
 }
 
 export default function ImageNText({
@@ -61,4 +78,3 @@ export default function ImageNText({
     </div>
   );
 }
-

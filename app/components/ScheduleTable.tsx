@@ -246,7 +246,7 @@ const TimeSlot = ({
       </div>
       {location && (
         <div className="text-[11px] mt-1 text-gray-500 font-medium">
-          📍 {location}
+          {location}
         </div>
       )}
     </div>
