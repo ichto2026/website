@@ -7,18 +7,15 @@ Website for International Chemistry Tournament 2026
 - /
 - /about
 - /rules
-- /org (Image TBA)
+- /org
 - /jury (Members TBA)
 - /past
 - /problems
-- /korea (Heongsung Image TBA)
-- /venue (Image Translation TBA)
+- /korea
+- /venue
 - /results (Waiting for the update)
 - /schedule
 - /cultural
 - /info (Content TBA)
 - /sponsors (List TBA)
 - /register
-
-## TODO
-- image optimization
