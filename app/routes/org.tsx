@@ -15,12 +15,12 @@ export function meta({}: Route.MetaArgs) {
 
 function PeopleList({
   title,
-  imageUrls,
+  imageNames,
   names,
   roles = [],
 }: {
   title: string;
-  imageUrls: string[];
+  imageNames: string[];
   names: string[];
   roles?: string[];
 }) {
@@ -29,11 +29,19 @@ function PeopleList({
       key={index}
       className="w-40 text-blue-800 mb-4 flex flex-col items-center"
     >
-      <img
-        src={imageUrls[index]}
-        alt={name}
-        className="w-40 h-40 object-cover rounded-full"
-      />
+      <picture>
+        <source
+          srcSet={`/org/${imageNames[index]}.avif`}
+          type="image/avif"
+          className="w-40 h-40 object-cover rounded-full"
+        />
+        <img
+          src={`/org/${imageNames[index]}.jpg`}
+          alt={name}
+          loading="lazy"
+          className="w-40 h-40 object-cover rounded-full"
+        />
+      </picture>
       <h3 className="text-2xl font-bold text-gray-900 mb-2">{name}</h3>
       {roles.length > index && <p className="text-gray-600">{roles[index]}</p>}
     </div>
@@ -69,7 +77,7 @@ export default function OrganizingCommittee() {
       />
       <PeopleList
         title="IChTo 2026 Steering Committee"
-        imageUrls={Array(3).fill("https://placehold.co/400")}
+        imageNames={["wonhyeong_jang", "jaehyun_won", "dohui_kim"]}
         names={["Wonhyeong Jang", "Jaehyun Won", "Dohui Kim"]}
         roles={[
           "KMLA Chemistry Teacher",
@@ -79,7 +87,12 @@ export default function OrganizingCommittee() {
       />
       <PeopleList
         title="Chief Moderators"
-        imageUrls={Array(4).fill("https://placehold.co/400")}
+        imageNames={[
+          "jaehyun_won",
+          "dohui_kim",
+          "songyeon_shin",
+          "allison_chun",
+        ]}
         names={["Jaehyun Won", "Dohui Kim", "Songyeon Shin", "Allison Chun"]}
         roles={[
           "IChTo-2025 Gold Medalist",
@@ -90,14 +103,24 @@ export default function OrganizingCommittee() {
       />
       <PeopleList
         title="Media & Support"
-        imageUrls={Array(6).fill("https://placehold.co/400")}
+        imageNames={[
+          "jeonguk_choi",
+          "seungbeen_hur",
+          "jinwoo_an",
+          "sungyeol_choi",
+        ]}
         names={["Jeonguk Choi", "Seungbeen Hur", "Jinwoo An", "Sungyeol Choi"]}
         roles={["Technology Head", "OutReach Head", "Contents Head", "Advisor"]}
       />
       <PeopleList
         title="Volunteers"
-        imageUrls={Array(1).fill("https://placehold.co/400")}
-        names={Array(1).fill("TBA")}
+        imageNames={[
+          "chaeah_lee",
+          "dajeong_youn",
+          "eunbi_choi",
+          "haseong_jung",
+        ]}
+        names={["Chaeah Lee", "Dajeong Youn", "Eunbi Choi", "Haseong Jung"]}
       />
     </div>
   );
