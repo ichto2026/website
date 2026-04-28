@@ -175,7 +175,7 @@ The Reviewer’s statement should identify where the Reporter’s work was stron
       <h2 className="text-2xl sm:text-3xl text-center text-gray-600 px-8 sm:px-16 sm:mb-8">
         Example Videos
       </h2>
-      <div className="min-h-[600px] px-4 sm:px-20 mb-12 w-full flex flex-col lg:flex-row justify-around space-y-8">
+      <div className="min-h-[420px] px-4 sm:px-20 mb-4 w-full flex flex-col lg:flex-row justify-around space-y-8">
         <iframe
           src="https://drive.google.com/file/d/1cH51_nOOAfborAeicx6ljNWySmxMzdVP/preview"
           className="w-full h-[240px] lg:w-[600px] md:h-[420px]"
@@ -183,6 +183,15 @@ The Reviewer’s statement should identify where the Reporter’s work was stron
         <iframe
           src="https://drive.google.com/file/d/1tdqWNpXyhw0jY5OkFg2Bxw6ubjYqrIlS/preview"
           className="w-full h-[240px] lg:w-[600px] md:h-[420px]"
+        ></iframe>
+      </div>
+      <h2 className="text-2xl sm:text-3xl text-center text-gray-600 px-8 sm:px-16 sm:mb-8">
+        Detailed Document
+      </h2>
+      <div className="flex justify-center w-full mb-12">
+        <iframe
+          src="https://drive.google.com/file/d/1b7m3wJKunNGFnNhs-LNjxOQ3xknWsIik/preview"
+          className="px-4 my-4 w-[720px] h-[480px] shadow-md rounded-sm"
         ></iframe>
       </div>
     </div>

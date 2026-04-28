@@ -94,7 +94,8 @@ const ScheduleTable = () => {
                   </span>
                   <p className="font-bold text-blue-900 mt-1">Excursion 1</p>
                   <p className="text-sm text-blue-700">
-                    Water Planet, Welli Hilli Park
+                    Korean Cultural Experience: Calligraphy, Gayageum, Korean
+                    Archery, etc.
                   </p>
                 </div>
               </div>
@@ -147,7 +148,7 @@ const ScheduleTable = () => {
                   </span>
                   <p className="font-bold text-green-900 mt-1">Excursion 2</p>
                   <p className="text-xs text-green-700 leading-tight">
-                    Calligraphy, Gayageum, Korean Archery
+                    Minjok International Conference: Poster presentation
                   </p>
                 </div>
                 <TimeSlot
@@ -189,7 +190,7 @@ const ScheduleTable = () => {
                     Excursion 3
                   </p>
                   <p className="text-md text-orange-800 font-medium">
-                    Lotte World Adventure
+                    Seoul City Tour
                   </p>
                 </div>
                 <TimeSlot

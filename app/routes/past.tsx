@@ -34,7 +34,6 @@ Finalist: Samruk (Kazakhstan), Tin Plaque (Russia), Wellington College (United K
       {/* Hero Section with About.jpg background */}
       <HeroImage title="Past Competitions" imageUrl="/past.jpg" />
 
-      {/* Jury Section */}
       <div className="container mx-auto px-4">
         <TextNMap
           title="8th IChTo 2025"
@@ -104,4 +103,3 @@ Finalist: Samruk (Kazakhstan), Tin Plaque (Russia), Wellington College (United K
     </div>
   );
 }
-

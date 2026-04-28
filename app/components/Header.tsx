@@ -20,6 +20,7 @@ export function Header() {
       { name: "Official Problems", href: "/problems" },
       { name: "Welcome to Korea", href: "/korea" },
       { name: "About the Venue", href: "/venue" },
+      { name: "Participants", href: "/participants" },
     ],
     program: [
       { name: "Results", href: "/results" },
