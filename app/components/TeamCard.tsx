@@ -9,7 +9,7 @@ export default function TeamCard({
   return (
     <div className="flex p-4 bg-gray-100 rounded-lg space-x-4">
       <img
-        src={`/public/flags/${flagFilename}.svg`}
+        src={`/flags/${flagFilename}.svg`}
         alt={nation}
         loading="lazy"
         className="min-w-24 w-24 min-h-16 h-16"
