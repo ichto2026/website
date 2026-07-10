@@ -76,25 +76,23 @@ export default function OrganizingCommittee() {
         reverse
       />
       <PeopleList
-        title="IChTo 2026 Steering Committee"
-        imageNames={["wonhyeong_jang", "jaehyun_won", "dohui_kim"]}
-        names={["Wonhyeong Jang", "Jaehyun Won", "Dohui Kim"]}
-        roles={[
-          "KMLA Chemistry Teacher",
-          "IChTo-2025 Gold Medalist",
-          "IChTo-2025 Gold Medalist",
-        ]}
-      />
-      <PeopleList
-        title="Chief Moderators"
+        title="Moderators"
         imageNames={[
+          "lili_hanna_vaskó",
           "jaehyun_won",
           "dohui_kim",
           "songyeon_shin",
           "allison_chun",
         ]}
-        names={["Jaehyun Won", "Dohui Kim", "Songyeon Shin", "Allison Chun"]}
+        names={[
+          "Lili Hanna Vaskó",
+          "Jaehyun Won",
+          "Dohui Kim",
+          "Songyeon Shin",
+          "Allison Chun",
+        ]}
         roles={[
+          "Chief Moderator",
           "IChTo-2025 Gold Medalist",
           "IChTo-2025 Gold Medalist",
           "IChTo-2025 Gold Medalist",
@@ -113,14 +111,64 @@ export default function OrganizingCommittee() {
         roles={["Technology Head", "OutReach Head", "Contents Head", "Advisor"]}
       />
       <PeopleList
-        title="Volunteers"
+        title="Organizers"
         imageNames={[
           "chaeah_lee",
           "dajeong_youn",
           "eunbi_choi",
           "haseong_jung",
+          "junoh_yoon",
+          "seowoo_jung",
+          "taebeen_son",
+          "sihwan_kim",
+          "juwon_park",
         ]}
-        names={["Chaeah Lee", "Dajeong Youn", "Eunbi Choi", "Haseong Jung"]}
+        names={[
+          "Chaeah Lee",
+          "Dajeong Youn",
+          "Eunbi Choi",
+          "Haseong Jung",
+          "Junoh Yoon",
+          "Seowoo Jung",
+          "Taebeen Son",
+          "Sihwan Kim",
+          "Juwon Park",
+        ]}
+      />
+      <PeopleList
+        title="Volunteers"
+        imageNames={[
+          "dhayul_lee",
+          "seoyeon_jin",
+          "seoheon_kim",
+          "junghoo_park",
+          "inseo_paek",
+          "wooyeon_ahn",
+          "rowaninchan_song",
+          "hayul_koo",
+          "jaemin_lim",
+          "sooah_lee",
+          "yean_ban",
+          "yehyun_lee",
+          "gahyeon_ryu",
+          "mina_kim",
+        ]}
+        names={[
+          "Dhayul Lee",
+          "Seoyeon Jin",
+          "Seoheon Kim",
+          "Junghoo Park",
+          "Inseo Paek",
+          "Wooyeon Ahn",
+          "Rowaninchan Song",
+          "Hayul Koo",
+          "Jaemin Lim",
+          "Sooah Lee",
+          "Yean Ban",
+          "Yehyun Lee",
+          "Gahyeon Ryu",
+          "Mina Kim",
+        ]}
       />
     </div>
   );

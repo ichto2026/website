@@ -13,7 +13,7 @@ export function Header() {
       { name: "Introducing IChTo", href: "/about" },
       { name: "Rules and Format", href: "/rules" },
       { name: "Organizing Committee", href: "/org" },
-      { name: "Jury Members", href: "/jury" },
+      // { name: "Jury Members", href: "/jury" },
       { name: "Past Competitions", href: "/past" },
     ],
     participation: [

@@ -52,15 +52,13 @@ We warmly invite you to join us at IChTo 2026 — a place where chemistry, ideas
         <div className="flex flex-col items-center">
           <Users className="w-12 h-12 text-blue-800 mb-4" />
           <h3 className="text-2xl font-bold text-gray-900 mb-2">
-            60+ Participants
+            100+ Participants
           </h3>
           <p className="text-gray-600">Gathered in a week</p>
         </div>
         <div className="flex flex-col items-center">
           <Globe className="w-12 h-12 text-blue-800 mb-4" />
-          <h3 className="text-2xl font-bold text-gray-900 mb-2">
-            10 Countries
-          </h3>
+          <h3 className="text-2xl font-bold text-gray-900 mb-2">9 Countries</h3>
           <p className="text-gray-600">Represented</p>
         </div>
       </div>

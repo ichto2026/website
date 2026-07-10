@@ -4,7 +4,7 @@ import TeamCard from "~/components/TeamCard";
 
 const teamMembers = {
   Radical: [
-    { role: "Leader/Jury", members: ["Heejun An"] },
+    { role: "Leader", members: ["Heejun An"] },
     {
       role: "Participant",
       members: [
@@ -55,8 +55,6 @@ const teamMembers = {
         "Neag Tudor-Brendan",
       ],
     },
-    { role: "Jury (F)", members: ["Ștefan Dimitriu"] },
-    { role: "Sec. Leader", members: ["Codruța Popescu"] },
   ],
   "Hungarian Team Green": [
     { role: "Leader", members: ["Dénes Buzafalvi"] },
@@ -71,9 +69,38 @@ const teamMembers = {
         "Kálmán István Bálint",
       ],
     },
-    { role: "Additional", members: ["Andrea Formanné Kiss"] },
-    { role: "Jury (F)", members: ["Ádám Márk Pálvölgyi", "Bence Nagy"] },
-    { role: "Moderator", members: ["Lili Hanna Vaskó"] },
+  ],
+  Nomads: [
+    { role: "Leader", members: ["Rilaa Ahamed Mohamed Nisar"] },
+    {
+      role: "Participant",
+      members: [
+        "Diaz Mambetaliev (C)",
+        "Samira Abdimalikova",
+        "Ilyas Meirachev",
+        "Samat Davletbekov",
+        "Aibike Akzhigitova (C)",
+        "Aysima Omokanova",
+        "Raiana Sharabidinova",
+        "Sanira Ulanovna Ulanova",
+      ],
+    },
+  ],
+  TenoCHtitlan: [
+    {
+      role: "Leader",
+      members: ["Sandra Jara Castro", "Andrea Arreola Vargas"],
+    },
+    {
+      role: "Participant",
+      members: [
+        "Alexis Ivan Hernandez Garcia (C)",
+        "Alan Bustinduy Contreras",
+        "Iris Barragan Vazquez",
+        "Andrea Teresa Figueroa Gracia",
+        "Kenya Ximena Vilchis Rivera",
+      ],
+    },
   ],
   "Hungarian Team Red": [
     { role: "Leader", members: ["Balázs Csoma"] },
@@ -104,7 +131,7 @@ const teamMembers = {
     },
   ],
   "Periodic acid": [
-    { role: "Leader/Jury", members: ["Fazliev Timur"] },
+    { role: "Leader", members: ["Fazliev Timur"] },
     {
       role: "Participant",
       members: [
@@ -118,7 +145,7 @@ const teamMembers = {
     },
   ],
   NPMG: [
-    { role: "Leader/Jury (F)", members: ["Nasko Yuriev Stamenov"] },
+    { role: "Leader", members: ["Nasko Yuriev Stamenov"] },
     {
       role: "Participant",
       members: [
@@ -132,7 +159,7 @@ const teamMembers = {
     },
   ],
   "In Our Elements": [
-    { role: "Leader/Jury (F)", members: ["Dimitrije Gligorovski"] },
+    { role: "Leader", members: ["Dimitrije Gligorovski"] },
     {
       role: "Participant",
       members: [
@@ -143,7 +170,6 @@ const teamMembers = {
         "Una Vujadinović",
       ],
     },
-    { role: "Jury (F)", members: ["Anamarija Nikoletić"] },
   ],
   "National College Sfantul Sava": [
     { role: "Leader", members: ["Daniela Bogdan"] },
@@ -158,11 +184,9 @@ const teamMembers = {
         "Alexia Elena Ruxandra Iordache",
       ],
     },
-    { role: "Jury", members: ["Francesca Alexandra Constantin"] },
   ],
   "Perse-cipitates": [
     { role: "Leader", members: ["Ben Richard Merison"] },
-    { role: "Additional", members: ["Nicole Ruth Anne Copeland"] },
     {
       role: "Participant",
       members: [
@@ -177,11 +201,10 @@ const teamMembers = {
   ],
   "St Paul's School": [
     { role: "Leader", members: ["Thomas Russell Orr"] },
-    { role: "Jury (F)", members: ["Matthew John Paul Smith"] },
     {
       role: "Participant",
       members: [
-        "Adavya Goyal",
+        "Joshua Knox (C)",
         "Ishan Madhok",
         "Haris Naser",
         "Eshan Park",
@@ -245,8 +268,16 @@ export default function Participants() {
           roles={teamMembers["Hungarian Team Green"]}
         />
         {/* <TeamCard name="Unstable Isotope" nation="Kazakhstan" /> */}
-        <TeamCard name="Nomads" nation="Kyrgyzstan" />
-        <TeamCard name="TenoCHtitlan" nation="Mexico" />
+        <TeamCard
+          name="Nomads"
+          nation="Kyrgyzstan"
+          roles={teamMembers.Nomads}
+        />
+        <TeamCard
+          name="TenoCHtitlan"
+          nation="Mexico"
+          roles={teamMembers.TenoCHtitlan}
+        />
         {/* <TeamCard name="WILLIAMS" nation="Nigeria" /> */}
         {/* <TeamCard name="Yobe State" nation="Nigeria" /> */}
         {/* <TeamCard name="Mr. Ryan fan club" nation="Philippines" /> */}

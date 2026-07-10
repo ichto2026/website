@@ -83,14 +83,9 @@ const ScheduleTable = () => {
                   isLong
                 />
                 <LunchSlot />
-                <TimeSlot
-                  time="13:30-14:00"
-                  title="KMLA → Welli Hilli"
-                  type="transport"
-                />
                 <div className="flex-grow min-h-[120px] p-3 bg-blue-50 m-2 rounded-lg border border-blue-100">
                   <span className="text-xs font-bold text-blue-600">
-                    14:00-17:30
+                    13:30-17:30
                   </span>
                   <p className="font-bold text-blue-900 mt-1">Excursion 1</p>
                   <p className="text-sm text-blue-700">
@@ -98,6 +93,11 @@ const ScheduleTable = () => {
                     Archery, etc.
                   </p>
                 </div>
+                <TimeSlot
+                  time="17:30-18:00"
+                  title="KMLA → Welli Hilli"
+                  type="transport"
+                />
               </div>
 
               {/* Day 3: 8/17 */}
@@ -136,15 +136,15 @@ const ScheduleTable = () => {
                   type="transport"
                 />
                 <TimeSlot
-                  time="08:30-12:30"
+                  time="09:00-13:00"
                   title="Final"
                   location="Auditorium"
                   isLong
                 />
-                <LunchSlot />
+                <LunchSlot time="13:00-14:00" />
                 <div className="p-3 bg-green-50 m-2 rounded-lg border border-green-100">
                   <span className="text-xs font-bold text-green-600">
-                    13:30-16:30
+                    14:00-16:30
                   </span>
                   <p className="font-bold text-green-900 mt-1">Excursion 2</p>
                   <p className="text-xs text-green-700 leading-tight">
@@ -154,24 +154,13 @@ const ScheduleTable = () => {
                 <TimeSlot
                   time="16:30-17:30"
                   title="Closing Ceremony"
-                  location="Auditorium"
-                />
-                <TimeSlot
-                  time="17:30-19:00"
-                  title="Dinner"
-                  location="School cafeteria"
-                  type="meal"
-                />
-                <TimeSlot
-                  time="19:00-21:00"
-                  title="Farewell Party & Musical Performance"
                   location="Gymnasium"
-                  highlight
                 />
                 <TimeSlot
-                  time="21:00-21:30"
+                  time="17:30-18:00"
                   title="KMLA → Welli Hilli"
                   type="transport"
+                  className="flex-grow"
                 />
               </div>
 
@@ -184,20 +173,15 @@ const ScheduleTable = () => {
                 />
                 <div className="flex-grow p-4 bg-orange-50 m-2 rounded-lg border border-orange-100 flex flex-col justify-center text-center">
                   <span className="text-sm font-bold text-orange-600">
-                    10:30-17:00
+                    10:30-
                   </span>
                   <p className="font-black text-lg text-orange-900 mt-2">
                     Excursion 3
                   </p>
                   <p className="text-md text-orange-800 font-medium">
-                    Seoul City Tour
+                    Lotte World Adventure
                   </p>
                 </div>
-                <TimeSlot
-                  time="17:00~"
-                  title="Seoul → Incheon Airport"
-                  type="transport"
-                />
               </div>
             </div>
           </div>
@@ -254,11 +238,9 @@ const TimeSlot = ({
   );
 };
 
-const LunchSlot = () => (
+const LunchSlot = ({ time = "12:30-13:30" }: { time?: string }) => (
   <div className="bg-indigo-50 py-2 px-4 border-y border-indigo-100 text-center my-1">
-    <span className="text-[10px] font-black text-indigo-400">
-      12:30-13:30 LUNCH
-    </span>
+    <span className="text-[10px] font-black text-indigo-400">{time} LUNCH</span>
   </div>
 );
 
