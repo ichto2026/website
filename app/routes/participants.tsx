@@ -61,8 +61,8 @@ const teamMembers = {
     {
       role: "Participant",
       members: [
+        "Péter Rőthy-Gruber (C)",
         "Dávid Gombos",
-        "Péter Rőthy-Gruber",
         "Péter Balajti",
         "Gréta Molnár",
         "Kinga Emese Bencze",
@@ -107,8 +107,8 @@ const teamMembers = {
     {
       role: "Participant",
       members: [
+        "Petra Kovács (C)",
         "Minh Quan Hoang",
-        "Petra Kovács",
         "Bori Kemény",
         "Emma Leiner",
         "Viktória Halász",
@@ -209,7 +209,6 @@ const teamMembers = {
         "Haris Naser",
         "Eshan Park",
         "Jake Hope",
-        "Joshua Knox",
       ],
     },
   ],

@@ -78,7 +78,8 @@ export default function OrganizingCommittee() {
       <PeopleList
         title="Moderators"
         imageNames={[
-          "lili_hanna_vaskó",
+          "lili_hanna_vasko",
+          "wonhyeong_jang",
           "jaehyun_won",
           "dohui_kim",
           "songyeon_shin",
@@ -86,6 +87,7 @@ export default function OrganizingCommittee() {
         ]}
         names={[
           "Lili Hanna Vaskó",
+          "Wonhyeong Jang",
           "Jaehyun Won",
           "Dohui Kim",
           "Songyeon Shin",
@@ -93,6 +95,7 @@ export default function OrganizingCommittee() {
         ]}
         roles={[
           "Chief Moderator",
+          "Head Advisor",
           "IChTo-2025 Gold Medalist",
           "IChTo-2025 Gold Medalist",
           "IChTo-2025 Gold Medalist",
