@@ -42,7 +42,7 @@ const teamMembers = {
       ],
     },
   ],
-  d2sp3: [
+  "d²sp³": [
     { role: "Leader", members: ["Dumitrescu Ștefan-Ionel"] },
     {
       role: "Participant",
@@ -70,15 +70,24 @@ const teamMembers = {
       ],
     },
   ],
-  Nomads: [
+  "Nomads A": [
     { role: "Leader", members: ["Rilaa Ahamed Mohamed Nisar"] },
     {
       role: "Participant",
       members: [
         "Diaz Mambetaliev (C)",
+        "Dinara Bekova",
         "Samira Abdimalikova",
         "Ilyas Meirachev",
         "Samat Davletbekov",
+      ],
+    },
+  ],
+  "Nomads B": [
+    { role: "Leader", members: ["Rilaa Ahamed Mohamed Nisar"] },
+    {
+      role: "Participant",
+      members: [
         "Aibike Akzhigitova (C)",
         "Aysima Omokanova",
         "Raiana Sharabidinova",
@@ -163,7 +172,7 @@ const teamMembers = {
     {
       role: "Participant",
       members: [
-        "Andrej Drobnjaković",
+        "Andrej Drobnjaković (C)",
         "Jovan Kulezić",
         "Mateja Radeta",
         "Irina Alimpijević",
@@ -185,12 +194,12 @@ const teamMembers = {
       ],
     },
   ],
-  "Perse-cipitates": [
+  "The Perse-cipitates": [
     { role: "Leader", members: ["Ben Richard Merison"] },
     {
       role: "Participant",
       members: [
-        "Rachel Liu",
+        "Rachel Liu (C)",
         "Chenning Liu",
         "Saisha Sarju Mehta",
         "Stephen Ngai",
@@ -209,6 +218,7 @@ const teamMembers = {
         "Haris Naser",
         "Eshan Park",
         "Jake Hope",
+        "Richard Zhan",
       ],
     },
   ],
@@ -268,9 +278,14 @@ export default function Participants() {
         />
         {/* <TeamCard name="Unstable Isotope" nation="Kazakhstan" /> */}
         <TeamCard
-          name="Nomads"
+          name="Nomads A"
           nation="Kyrgyzstan"
-          roles={teamMembers.Nomads}
+          roles={teamMembers["Nomads A"]}
+        />
+        <TeamCard
+          name="Nomads B"
+          nation="Kyrgyzstan"
+          roles={teamMembers["Nomads B"]}
         />
         <TeamCard
           name="TenoCHtitlan"
@@ -285,7 +300,7 @@ export default function Participants() {
           nation="Romania"
           roles={teamMembers["National College Sfantul Sava"]}
         />
-        <TeamCard name="d2sp3" nation="Romania" roles={teamMembers.d2sp3} />
+        <TeamCard name="d²sp³" nation="Romania" roles={teamMembers["d²sp³"]} />
         <TeamCard
           name="Periodic acid"
           nation="Russian Federation"
@@ -308,9 +323,9 @@ export default function Participants() {
           roles={teamMembers["St Paul's School"]}
         />
         <TeamCard
-          name="Perse-cipitates"
+          name="The Perse-cipitates"
           nation="United Kingdom"
-          roles={teamMembers["Perse-cipitates"]}
+          roles={teamMembers["The Perse-cipitates"]}
         />
       </div>
     </div>

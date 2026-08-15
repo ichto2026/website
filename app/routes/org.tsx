@@ -79,7 +79,6 @@ export default function OrganizingCommittee() {
         title="Moderators"
         imageNames={[
           "lili_hanna_vasko",
-          "wonhyeong_jang",
           "jaehyun_won",
           "dohui_kim",
           "songyeon_shin",
@@ -87,7 +86,6 @@ export default function OrganizingCommittee() {
         ]}
         names={[
           "Lili Hanna Vaskó",
-          "Wonhyeong Jang",
           "Jaehyun Won",
           "Dohui Kim",
           "Songyeon Shin",
@@ -95,7 +93,6 @@ export default function OrganizingCommittee() {
         ]}
         roles={[
           "Chief Moderator",
-          "Head Advisor",
           "IChTo-2025 Gold Medalist",
           "IChTo-2025 Gold Medalist",
           "IChTo-2025 Gold Medalist",
@@ -108,14 +105,20 @@ export default function OrganizingCommittee() {
           "jeonguk_choi",
           "seungbeen_hur",
           "jinwoo_an",
-          "sungyeol_choi",
+          "joohoon_sim",
         ]}
-        names={["Jeonguk Choi", "Seungbeen Hur", "Jinwoo An", "Sungyeol Choi"]}
-        roles={["Technology Head", "OutReach Head", "Contents Head", "Advisor"]}
+        names={["Jeonguk Choi", "Seungbeen Hur", "Jinwoo An", "Joohoon Sim"]}
+        roles={[
+          "Technology Head",
+          "OutReach Head",
+          "Contents Head",
+          "Contents",
+        ]}
       />
       <PeopleList
         title="Organizers"
         imageNames={[
+          "wonhyeong_jang",
           "chaeah_lee",
           "dajeong_youn",
           "eunbi_choi",
@@ -125,8 +128,12 @@ export default function OrganizingCommittee() {
           "taebeen_son",
           "sihwan_kim",
           "juwon_park",
+          "yuri_seo",
+          "empty",
+          "empty",
         ]}
         names={[
+          "Wonhyeong Jang",
           "Chaeah Lee",
           "Dajeong Youn",
           "Eunbi Choi",
@@ -136,6 +143,9 @@ export default function OrganizingCommittee() {
           "Taebeen Son",
           "Sihwan Kim",
           "Juwon Park",
+          "Yuri Seo",
+          "Minji Hwang",
+          "Yunmo Koo",
         ]}
       />
       <PeopleList
@@ -155,6 +165,10 @@ export default function OrganizingCommittee() {
           "yehyun_lee",
           "gahyeon_ryu",
           "mina_kim",
+          "rua_kim",
+          "bosung_kim",
+          "hayoon_moon",
+          "jiseo_lee",
         ]}
         names={[
           "Dhayul Lee",
@@ -171,6 +185,10 @@ export default function OrganizingCommittee() {
           "Yehyun Lee",
           "Gahyeon Ryu",
           "Mina Kim",
+          "Rua Kim",
+          "Bosung Kim",
+          "Hayoon Moon",
+          "Jiseo Lee",
         ]}
       />
     </div>

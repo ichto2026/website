@@ -138,7 +138,7 @@ const ScheduleTable = () => {
                 <TimeSlot
                   time="09:00-13:00"
                   title="Final"
-                  location="Auditorium"
+                  location="Gymnasium"
                   isLong
                 />
                 <LunchSlot time="13:00-14:00" />
