@@ -13,7 +13,7 @@ export const resultPosts: ResultPost[] = [
     title: "Stage 1 Results",
     date: "2026-08-15",
     content: [
-      "The official results for Day 1 is published.",
+      "The official results for Stage 1 is published.",
       "Please review the detailed scores in the document below.",
     ],
     driveFileId: "1no4n-4lbds0IpTHVA272hWD7lnSEjf1p",
@@ -23,7 +23,7 @@ export const resultPosts: ResultPost[] = [
     title: "Stage 2 Results",
     date: "2026-08-16",
     content: [
-      "The official results for Day 2 is published.",
+      "The official results for Stage 2 is published.",
       "Please review the detailed scores in the document below.",
     ],
     driveFileId: "1MNhDWm0BFU43bx_b8gUjiCQGlk0_WvhE",
