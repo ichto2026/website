@@ -18,7 +18,17 @@ export const resultPosts: ResultPost[] = [
     ],
     driveFileId: "1no4n-4lbds0IpTHVA272hWD7lnSEjf1p",
   },
-];
+  {
+    id: 2,
+    title: "Stage 2 Results",
+    date: "2026-08-16",
+    content: [
+      "The official results for Day 2 is published.",
+      "Please review the detailed scores in the document below.",
+    ],
+    driveFileId: "1MNhDWm0BFU43bx_b8gUjiCQGlk0_WvhE",
+  },
+].sort((a, b) => b.id - a.id);
 
 export function getResultPost(id: string | number) {
   return resultPosts.find((post) => String(post.id) === String(id));
