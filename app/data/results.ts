@@ -25,8 +25,10 @@ export const resultPosts: ResultPost[] = [
     content: [
       "The official results for Stage 2 is published.",
       "Please review the detailed scores in the document below.",
+      "--- Updated ---",
+      "The organizers of IChTo 2026 sincerely apologize for the errors in recording and publishing the strategic refusal history for the semifinal stages of IChTo. Periodic Acid did not present Problem 6, but strategically refused it. St. Paul did not strategically refuse Problem 4, but instead presented it. We sincerely apologize for any confusion or inconvenience this may have caused. We will take greater care in reviewing the score announcement process to ensure that similar errors do not occur in the remaining stages of the competition.",
     ],
-    driveFileId: "1MNhDWm0BFU43bx_b8gUjiCQGlk0_WvhE",
+    driveFileId: "1_bN93UQUUBe94EeocFJsnLbOwADaddxO",
   },
 ].sort((a, b) => b.id - a.id);
 
