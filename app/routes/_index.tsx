@@ -49,9 +49,6 @@ export default function Home() {
             <br />
             in Hoengseong, KR
           </p>
-          <p className="text-xl mt-4 text-red-400 bg-gray-200 sm:w-98 text-center">
-            Problem Sets and Schedules are released!
-          </p>
         </div>
       </section>
     </div>
