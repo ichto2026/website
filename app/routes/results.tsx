@@ -19,7 +19,7 @@ export default function Results() {
     <div className="min-h-screen">
       <HeroImage title="Results" imageUrl="/results.jpg" />
 
-      <section className="container mx-auto px-4 mt-10">
+      <section className="container mx-auto px-4 mt-10 md:mb-20">
         <div className="mx-auto max-w-4xl">
           <div className="mb-5 border-b border-gray-200 pb-4">
             <div className="flex flex-col justify-between gap-2 md:flex-row md:items-end">
