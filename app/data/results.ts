@@ -30,6 +30,16 @@ export const resultPosts: ResultPost[] = [
     ],
     driveFileId: "1_bN93UQUUBe94EeocFJsnLbOwADaddxO",
   },
+  {
+    id: 3,
+    title: "Stage 3 Results",
+    date: "2026-08-17",
+    content: [
+      "The official results for Stage 3 is published.",
+      "Please review the detailed scores in the document below.",
+    ],
+    driveFileId: "12qx1GtusFjbQmawkrAgrHN6PLk4JFdZr",
+  },
 ].sort((a, b) => b.id - a.id);
 
 export function getResultPost(id: string | number) {
