@@ -71,7 +71,7 @@ export default function ResultPost({ loaderData }: Route.ComponentProps) {
 
           <section aria-labelledby="official-document-title">
             {drivePreviewUrl && (
-              <div className="overflow-hidden bg-gray-100 md:h-200">
+              <div className="overflow-hidden bg-gray-100">
                 <iframe
                   src={drivePreviewUrl}
                   title={`${post.title} official document`}
